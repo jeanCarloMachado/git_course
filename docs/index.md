@@ -8,6 +8,7 @@ Git
 
 ### How To's
 
+ - [Inicializando um projeto](inicializando-projeto.md)
  - [Branches](branches.md)
  - [Desfazendo coisas](desfazendo.md)
  - [Reescrevendo histórico](reescrevendo-historico.md) 
