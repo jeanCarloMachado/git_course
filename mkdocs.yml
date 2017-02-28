@@ -1,1 +1,21 @@
-site_name: My Docs
+site_name: Git Docs
+theme: mkdocs
+pages:
+- Git:
+    - Home: 'index.md'
+    - História: '02_historia.md'
+    - Pra que serve: '03_pra-que-serve.md'
+    - Conceitos: '04_conceitos.md'
+- Comandos: '05_comandos.md'
+- How To's:
+    - Inicializando um projeto: '06_inicializando-projeto.md'
+    - Criando Histórico: '07_criando-historico.md'
+    - Patches: '08_patches.md'
+    - Branches: '09_branches.md'
+    - Merges: '10_merges.md'
+    - Desfazendo: '11_desfazendo.md'
+    - Reescrevendo Histórico: '12_reescrevendo-historico.md'
+    - Remotos: '13_remotos.md'
+    - Github: '14_Github.md'
+    - Ferramentas Auxiliares: '15_ferramentas-auxiliares-e-produtividade.md'
+- Recursos Adicionais: '16_recursos_adicionais.md'

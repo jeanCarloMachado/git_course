@@ -1,6 +1,3 @@
-Branches
-========
-
 Uma branch é uma linha de trabalho independente. Podem ser usadas para
 diversos propósitos.
 
@@ -38,9 +35,9 @@ git log
 
 Existem vários fluxos de trabalho de branches.
 
-Githubflow
-git flow
-branch por tópico
+ - Githubflow
+ - git flow
+ - branch por tópico
 
 Mais sobre fluxos de trabalho
 

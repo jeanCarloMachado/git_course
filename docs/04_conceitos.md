@@ -1,6 +1,3 @@
-Conceitos
-=========
-
 Histórico em grafo
 ------------------
 

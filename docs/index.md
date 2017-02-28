@@ -1,12 +1,8 @@
-Git
-===
+Git "the stupid content tracker"
+================================
 
- - [Comandos](comandos.md)
- - [Conceitos do git](conceitos.md)
- - [Pra que git serve](pra-que-serve.md)
- - [Historia](historia.md)
+ - [Pra que git serve?](03_pra-que-serve.md)
+ - [Historia](02_historia.md)
+ - [Lista de comandos](05_comandos.md)
+ - [Conceitos do git](04_conceitos.md)
 
-### How To's
-
- - [Desfazendo coisas](desfazendo.md)
- - [Reescrevendo histórico](reescrevendo-historico.md) 

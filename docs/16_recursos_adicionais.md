@@ -1,5 +1,6 @@
-Recursos Adicionais
-===================
+
+Links
+-----
 
  - [Referência oficial](https://git-scm.com/docs)
  - [Melhor tutorial de Git](http://rypress.com/tutorials/git/index)

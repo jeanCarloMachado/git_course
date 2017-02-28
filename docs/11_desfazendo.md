@@ -1,6 +1,3 @@
-Desfazendo
-==========
-
 ### O que ainda não está comitado
 
 ```
