@@ -65,3 +65,23 @@ git commit
 ```
 
 O commit transfere as informações para o repositório local.
+
+Patch
+-----
+
+Patches são mudanças que podem ser transferidas de um repositório
+para outro:
+
+Para criar um patch do último commit:
+
+```
+git format-patch master
+
+```
+
+Para aplicar um patch:
+
+```
+curl -L https://goo.gl/p1LEc7 -o 0001-historia.patch
+git apply 0001-historia.patch
+```
