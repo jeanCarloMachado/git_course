@@ -1,5 +1,5 @@
-Comandos
-========
+Lista de Comandos
+=================
 
 Git conta com vários comandos, a lista completa se encontra em
 /lib/git-core.
@@ -12,50 +12,10 @@ git commando --help
 
 ```
 
-
-Add
----
-
-Git add adiciona arquivos a uma área temporária
-para compor um commit (staging).
-
-```
-git add $ARQUIVO|$DIRETORIO
-```
-
-
-Commit
-------
-
-Cada mudança no histórico de um projeto é representado por um
-commit. `git show` mostra o  último commit.
-
-Para uma lista completa dos commits use: `git log`.
-
-```
-git commit
-```
-
-O commit transfere as informações para o repositório local.
-
-Patch
------
-
-Patches são mudanças que podem ser transferidas de um repositório
-para outro:
-
-Para criar um patch do último commit:
-
-```
-git format-patch master
-
-```
-
-Para aplicar um patch:
-
-```
-curl -L https://goo.gl/p1LEc7 -o 0001-historia.patch
-git apply 0001-historia.patch
-```
-
-[Branches](branches.md)
+ - git init
+ - git add
+ - git commit
+ - git format-patch
+ - git show
+ - git log
+ - git rebase
