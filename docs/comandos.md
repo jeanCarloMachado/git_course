@@ -44,14 +44,6 @@ git add $ARQUIVO|$DIRETORIO
 ```
 
 
-Git tem 3 áreas de armazenamento.
-
- - Staging (index)
- - Repositório Local
- - Repositório Remoto
-
-![Comandos de trasporte e áreas de armazenamento](git-transport.png)
-
 Commit
 ------
 
@@ -87,4 +79,3 @@ git apply 0001-historia.patch
 ```
 
 [Branches](branches.md)
-

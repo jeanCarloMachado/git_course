@@ -6,3 +6,6 @@ Git
  - [Pra que git serve](pra-que-serve.md)
  - [Historia](historia.md)
 
+### How To's
+
+ - [Desfazendo coisas](desfazendo.md)
