@@ -9,3 +9,4 @@ Git
 ### How To's
 
  - [Desfazendo coisas](desfazendo.md)
+ - [Reescrevendo histórico](reescrevendo-historico.md) 
