@@ -12,10 +12,18 @@ git commando --help
 
 ```
 
+Comandos conhecidos
+-------------------
+
  - git init
  - git add
  - git commit
  - git format-patch
+ - git apply
  - git show
  - git log
  - git rebase
+ - git revert
+ - git checkout
+ - git reset
+ - git stash
