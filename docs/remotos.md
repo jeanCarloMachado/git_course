@@ -26,14 +26,14 @@ Remoto online
 
 ```
 git clone https://github.com/JeanCarloMachado/git-docs
-
+git push origin new_branch
 ```
 
 Listar os repositórios remotos
 ------------------------------
 
 ```
-Git remote -v
+git remote -v
 
 ```
 
