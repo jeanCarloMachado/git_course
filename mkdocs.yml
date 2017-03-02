@@ -1,3 +1,16 @@
 site_name: Git Docs
-theme: readthedocs
-
+theme: mkdocs
+pages:
+- Git:
+    - 'index.md'
+    - 'historia.md'
+    - 'pra-que-serve.md'
+- Comandos: 'comandos.md'
+- How To's:
+    - 'inicializando-projeto.md'
+    - 'criando-historico.md'
+    - 'patches.md'
+    - 'branches.md'
+    - 'desfazendo.md'
+    - 'reescrevendo-historico.md'
+- Recursos Adicionais: 'recursos_adicionais.md'
