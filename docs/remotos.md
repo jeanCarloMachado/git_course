@@ -3,8 +3,8 @@ Remotos
 
 Git é distriuído.
 
-Remoto local
-------------
+Remoto no filesystem local
+--------------------------
 
 ```
 cd /path/to/git-docs
@@ -21,6 +21,14 @@ git remote add other ../other-git-docs
 git merge other/master
 ```
 
+Remoto online
+------------
+
+```
+git clone https://github.com/JeanCarloMachado/git-docs
+
+```
+
 Listar os repositórios remotos
 ------------------------------
 
@@ -29,10 +37,3 @@ Git remote -v
 
 ```
 
-Clone
------
-
-```
-git clone https://github.com/schacon/ticgit
-
-```
