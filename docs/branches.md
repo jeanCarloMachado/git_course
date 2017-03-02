@@ -38,9 +38,9 @@ git log
 
 Existem vários fluxos de trabalho de branches.
 
-Githubflow
-git flow
-branch por tópico
+ - Githubflow
+ - git flow
+ - branch por tópico
 
 Mais sobre fluxos de trabalho
 
