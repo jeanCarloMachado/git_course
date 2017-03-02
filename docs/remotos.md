@@ -9,10 +9,10 @@ Remoto local
 ```
 cd /path/to/my-git-repo
 cd ..
-git clone my-git-repo others-repo
-cd other-repo
-git config user.name "other"
-git config user.email other@gmail.com
+git clone git-docs other-git-docs
+cd other-git-docs
+git config user.name "other user"
+git config user.email other.user@gmail.com
 
 
 ```
