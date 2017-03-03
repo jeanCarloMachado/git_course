@@ -11,8 +11,8 @@ cd other-git-docs
 git config user.name "other user"
 git config user.email other.user@gmail.com
 
-#do some work
 
+//do some work
 cd ../git-docs
 git remote add other ../other-git-docs
 git merge other/master

@@ -1,5 +1,5 @@
 Lista de Comandos
-=================
+-----------------
 
 Git conta com vários comandos, a lista completa se encontra em
 /lib/git-core.
