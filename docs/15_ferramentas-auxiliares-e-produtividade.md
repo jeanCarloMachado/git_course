@@ -48,3 +48,14 @@ Hooks
 Com hooks é possível rodar comandos quando eventos ocorrem no git.
 
 
+Tags
+----
+
+Permite marcar pontos específicos no histórico adicionando
+semântica.
+
+```
+git tag -a "v1.0"
+
+```
+
