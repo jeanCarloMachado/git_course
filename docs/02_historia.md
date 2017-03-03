@@ -8,3 +8,11 @@ muito lento para comportar o trabalho do kernel.
 Alguns significados para o termo:
  - "global information tracker"
  - "goddamn idiotic truckload of sh*t"
+
+### Pontos-chave no design:
+
+ - Velocidade
+ - Design Simples
+ - Suporte a desenvolvimento não-linear (branches)
+ - Totalmente distribuído
+ - Capaz de lidar com projetos gigantes

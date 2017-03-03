@@ -14,8 +14,10 @@ pages:
     - Branches: '09_branches.md'
     - Merges: '10_merges.md'
     - Desfazendo: '11_desfazendo.md'
-    - Reescrevendo Histórico: '12_reescrevendo-historico.md'
     - Remotos: '13_remotos.md'
     - Github: '14_Github.md'
     - Ferramentas Auxiliares: '15_ferramentas-auxiliares-e-produtividade.md'
 - Recursos Adicionais: '16_recursos_adicionais.md'
+- Avançado: 
+    - Indice: '17_avancado.md'
+    - Reescrevendo Histórico: '12_reescrevendo-historico.md'

@@ -21,9 +21,11 @@ Comandos conhecidos
  - git format-patch
  - git apply
  - git show
+ - git diff
  - git log
+ - git push
  - git rebase
- - git revert
  - git checkout
- - git reset
  - git stash
+ - git revert
+ - git reset

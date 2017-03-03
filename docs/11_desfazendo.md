@@ -19,6 +19,17 @@ git reset HEAD $FILE
 
 ```
 
+### Revert
+
+Desfaz um commit criando um novo commit. Recomendado em branches
+públicas onde o histórico não pode ser reescrito.
+
+```
+git checkout hotfix
+git revert HEAD~2
+
+```
+
 ### Trocar a última mensagem de commit
 
 ```
