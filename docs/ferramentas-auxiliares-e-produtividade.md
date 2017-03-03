@@ -32,3 +32,8 @@ Bash aliases
 alias g=git
 
 ```
+
+[LFS](https://git-lfs.github.com/)
+----------------------------------
+
+Extensão para trabalhar com arquivos grandes

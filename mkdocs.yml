@@ -5,6 +5,7 @@ pages:
     - 'index.md'
     - 'historia.md'
     - 'pra-que-serve.md'
+    - 'conceitos.md'
 - Comandos: 'comandos.md'
 - How To's:
     - 'inicializando-projeto.md'
@@ -15,6 +16,6 @@ pages:
     - 'desfazendo.md'
     - 'reescrevendo-historico.md'
     - 'remotos.md'
-    - 'github.md'
+    - 'Github.md'
     - 'ferramentas-auxiliares-e-produtividade.md'
 - Recursos Adicionais: 'recursos_adicionais.md'
