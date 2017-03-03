@@ -1,6 +1,3 @@
-Reescrevendo Histórico
-======================
-
 É possível adicionar algo a um commit nos seguintes passos:
 
 - Rebase no commit e marcar ele como editado

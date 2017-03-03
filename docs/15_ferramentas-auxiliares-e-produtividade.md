@@ -1,6 +1,3 @@
-Ferramentas & Produtividade
-===========================
-
 Stash
 -----
 

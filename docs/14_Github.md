@@ -1,6 +1,3 @@
-GitHub
-======
-
 GitHub é uma rede social.
 
 

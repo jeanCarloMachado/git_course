@@ -1,6 +1,3 @@
-Branches
-========
-
 Uma branch é uma linha de trabalho independente. Podem ser usadas para
 diversos propósitos.
 

@@ -1,6 +1,3 @@
-Remotos
-=======
-
 Git é distriuído.
 
 Remoto no filesystem local

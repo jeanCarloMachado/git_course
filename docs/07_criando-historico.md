@@ -1,6 +1,3 @@
-Criando Histórico
-=================
-
 Add
 ---
 Git add adiciona arquivos a uma área temporária

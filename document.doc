@@ -1,0 +1,353 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 5.3.0.3 (Linux)"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changed" content="2017-03-03T10:20:24.861036999"/>
+</head>
+<body lang="pt-BR" dir="ltr">
+<h2>Git</h2>
+<ul>
+	<li/>
+<p style="margin-bottom: 0cm">Pra que git serve? 
+	</p>
+	<li/>
+<p style="margin-bottom: 0cm">Historia 
+	</p>
+	<li/>
+<p style="margin-bottom: 0cm">Lista de comandos 
+	</p>
+	<li/>
+<p>Conceitos do git 
+	</p>
+</ul>
+<h2><a name="história"></a>História</h2>
+<p>Git foi criado em 2005 por Linus Torvalds, o criador do Linux. A
+motivação de criar o Git foi porquê o CVS anterior (SVN) era muito
+lento para comportar o trabalho do kernel.</p>
+<p>Alguns significados para o termo: - &quot;global information
+tracker&quot; - &quot;goddamn idiotic truckload of sh*t&quot;</p>
+<h2><a name="pra-que-serve"></a>Pra que serve</h2>
+<h2><a name="git-serve-para-recuperar-informação"></a>Git serve
+para recuperar informação</h2>
+<pre><code>git log</code>
+<code>rm -rf docs</code>
+<code>browser http://localhost:8000</code>
+<code>git reset --hard HEAD</code>
+<code>browser http://localhost:8000</code></pre><h2>
+<a name="git-serve-para-versionar-informações"></a>Git serve para
+versionar informações</h2>
+<h5><a name="criando"></a>Criando</h5>
+<pre><code>echo &quot;Historia do git&quot; &gt;docs/historia.md</code>
+<code>echo &quot;Historia&quot; &gt;&gt;docs/index.md</code>
+<code>git add .</code>
+<code>git commit  -m &quot;adicionado arquivos sobre historia&quot;</code>
+<code>echo &quot;Git foi criado em 2005 por Linus Torvalds, o criador do Linux&quot; &gt;&gt;docs/historia.md</code>
+<code>git commit -a -m &quot;detalhes sobre a historia&quot;</code></pre><h5>
+<a name="desfazendo"></a>Desfazendo</h5>
+<pre><code>git checkout HEAD~1 docs/historia.md</code>
+<code>git checkout HEAD docs/historia.md</code></pre><p>
+Git também serve para:</p>
+<ul>
+	<li/>
+<p style="margin-bottom: 0cm">Trabalhar em múltiplas tarefas
+	concorrentemente 
+	</p>
+	<li/>
+<p style="margin-bottom: 0cm">Trabalhar com múltiplas equipes
+	concorrentemente 
+	</p>
+	<li/>
+<p>Pode-se versionar todo tipo de informação: projetos de
+	software, livros, tcc's, etc. 
+	</p>
+</ul>
+<h2><a name="conceitos"></a>Conceitos</h2>
+<h2><a name="histórico-em-grafo"></a>Histórico em grafo</h2>
+<p>Os commits no git são estruturados em forma de grafo</p>
+<p><img src="site/direct-acyclic-graph.svg" name="Image1" alt="Grafo acíclico" align="bottom" width="325" height="325" border="0"/>
+
+</p>
+<p>Grafo acíclico</p>
+<h2><a name="áreas-de-armazemanto-do-git"></a>Áreas de armazemanto
+do git</h2>
+<p>Git tem 3 áreas de armazenamento principais</p>
+<ul>
+	<li/>
+<p style="margin-bottom: 0cm">Staging (index) 
+	</p>
+	<li/>
+<p style="margin-bottom: 0cm">Repositório Local 
+	</p>
+	<li/>
+<p>Repositório Remoto 
+	</p>
+</ul>
+<p><img src="site/git-transport.png" name="Image2" alt="Comandos de trasporte e áreas de armazenamento" align="bottom" width="641" height="607" border="0"/>
+
+</p>
+<p>Comandos de trasporte e áreas de armazenamento</p>
+<h1><a name="comandos"></a>Comandos</h1>
+<h1><a name="lista-de-comandos"></a>Lista de Comandos</h1>
+<p>Git conta com vários comandos, a lista completa se encontra em
+/lib/git-core.</p>
+<p>Para mais detalhes do que como cada um opera pode utilizar</p>
+<pre><code>man git commando</code>
+<code>git commando --help</code></pre><h2>
+<a name="comandos-conhecidos"></a>Comandos conhecidos</h2>
+<ul>
+	<li/>
+<p style="margin-bottom: 0cm">git init 
+	</p>
+	<li/>
+<p style="margin-bottom: 0cm">git add 
+	</p>
+	<li/>
+<p style="margin-bottom: 0cm">git commit 
+	</p>
+	<li/>
+<p style="margin-bottom: 0cm">git format-patch 
+	</p>
+	<li/>
+<p style="margin-bottom: 0cm">git apply 
+	</p>
+	<li/>
+<p style="margin-bottom: 0cm">git show 
+	</p>
+	<li/>
+<p style="margin-bottom: 0cm">git log 
+	</p>
+	<li/>
+<p style="margin-bottom: 0cm">git rebase 
+	</p>
+	<li/>
+<p style="margin-bottom: 0cm">git revert 
+	</p>
+	<li/>
+<p style="margin-bottom: 0cm">git checkout 
+	</p>
+	<li/>
+<p style="margin-bottom: 0cm">git reset 
+	</p>
+	<li/>
+<p>git stash 
+	</p>
+</ul>
+<h2><a name="inicializando-um-projeto"></a>Inicializando um projeto</h2>
+<h2><a name="init"></a>Init</h2>
+<p>Para inicializar um projeto git</p>
+<p>São criados arquivos na pasta .git com os dados versionados.</p>
+<pre style="margin-bottom: 0.5cm"><code>git init $DIRETORIO</code></pre><p>
+Para uma lista dos arquivos criados pelo git:</p>
+<pre><code>cd /tmp</code>
+<code>git init foo</code>
+<code>find .</code></pre><h2>
+<a name="config"></a>Config</h2>
+<pre><code>git config --global user.name &quot;John Doe&quot;</code>
+<code>git config --global user.email johndoe@example.com</code></pre><h2>
+<a name="criando-histórico"></a>Criando Histórico</h2>
+<h2><a name="add"></a>Add</h2>
+<p>Git add adiciona arquivos a uma área temporária para compor um
+commit (staging).</p>
+<pre style="margin-bottom: 0.5cm"><code>git add $ARQUIVO|$DIRETORIO</code></pre><h2>
+<a name="commit"></a>Commit</h2>
+<p>Cada mudança no histórico de um projeto é representado por um
+commit. <code>git show</code> mostra o último commit.</p>
+<p>Para uma lista completa dos commits use: <code>git log</code>.</p>
+<pre style="margin-bottom: 0.5cm"><code>git commit</code></pre><p>
+O commit transfere as informações para o repositório local.</p>
+<p>Boas práticas de nomenclatura de commits
+https://www.alexkras.com/19-git-tips-for-everyday-use/#good-commit-message</p>
+<h2><a name="patches"></a>Patches</h2>
+<p>Patches são mudanças que podem ser transferidas de um
+repositório para outro:</p>
+<p>Para criar um patch do último commit:</p>
+<pre style="margin-bottom: 0.5cm"><code>git format-patch master</code></pre><p>
+Para aplicar um patch:</p>
+<pre><code>curl -L https://goo.gl/p1LEc7 -o 0001-historia.patch</code>
+<code>git apply 0001-historia.patch</code></pre><p>
+O resultado de <code>git show</code> e <code>git diff</code> também
+são comapatíveis com patches do git.</p>
+<pre><code>git diff &gt; my_patch.patch</code>
+<code>git show &gt; my_patch.patch</code>
+<code>git diff --cached &gt; my_patch.patch</code></pre><h2>
+<a name="branches"></a>Branches</h2>
+<p>Uma branch é uma linha de trabalho independente. Podem ser usadas
+para diversos propósitos.</p>
+<p>Pode-se ter uma branch para:</p>
+<ul>
+	<li/>
+<p style="margin-bottom: 0cm">experimentar uma tecnologia
+	nova; 
+	</p>
+	<li/>
+<p style="margin-bottom: 0cm">uma branch para um bug-fix; 
+	</p>
+	<li/>
+<p>outra para o trabalho do sprint; 
+	</p>
+</ul>
+<p>A branch padrão no git é a <code>master</code>. Para listar
+todas as branches use: <code>git branch</code></p>
+<pre><code>git commit &quot;informações sobre branches no master&quot;</code>
+<code>git checkout -b &quot;recursos_adicionais&quot; #cria outra linha de trabalho</code>
+<code>curl -L https://goo.gl/XlMc3m -o 0001-recursos_adicionais.patch</code>
+<code>git apply 0001-recursos_adicionais.patch</code></pre><p>
+O comando checkout serve para criar a branch e entrar nela.</p>
+<h5><a name="merge"></a>Merge</h5>
+<p>Merge mescla o conteúdo de branches</p>
+<pre><code>git commit -m &quot;mais modificações&quot;</code>
+<code>git merge recursos_adicionais</code>
+<code>git log</code></pre><h5>
+<a name="fluxos-de-trabalho"></a>Fluxos de trabalho</h5>
+<p>Existem vários fluxos de trabalho de branches.</p>
+<ul>
+	<li/>
+<p style="margin-bottom: 0cm">Githubflow 
+	</p>
+	<li/>
+<p style="margin-bottom: 0cm">git flow 
+	</p>
+	<li/>
+<p>branch por tópico 
+	</p>
+</ul>
+<p>Mais sobre fluxos de trabalho</p>
+<ul>
+	<li/>
+<p style="margin-bottom: 0cm">https://git-scm.com/book/en/v2/Distributed-Git-Distributed-Workflows#_distributed_git
+		</p>
+	<li/>
+<p>https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows
+		</p>
+</ul>
+<h2><a name="merges"></a>Merges</h2>
+<p>Fast-forward: move o ponteiro da master para o último commit da
+branch.</p>
+<pre style="margin-bottom: 0.5cm"><code>git merge --fast-forward</code></pre><h2>
+<a name="resolvendo-com-nossas-alterações"></a>Resolvendo com
+nossas alterações</h2>
+<pre style="margin-bottom: 0.5cm"><code>git pull origin master -X ours</code></pre><h2>
+<a name="desfazendo-1"></a>Desfazendo</h2>
+<h5><a name="o-que-ainda-não-está-comitado"></a>O que ainda não
+está comitado</h5>
+<pre style="margin-bottom: 0.5cm"><code>git reset --hard HEAD</code></pre><h5>
+<a name="remover-arquivos-criados-mas-não-versionados"></a>Remover
+arquivos criados mas não versionados</h5>
+<pre style="margin-bottom: 0.5cm"><code>git ls-files --others --exclude-standard | xargs rm</code></pre><h5>
+<a name="remover-do-staging"></a>Remover do staging</h5>
+<pre style="margin-bottom: 0.5cm"><code>git reset HEAD $FILE</code></pre><h5>
+<a name="trocar-a-última-mensagem-de-commit"></a>Trocar a última
+mensagem de commit</h5>
+<pre style="margin-bottom: 0.5cm"><code>git commit --amend</code></pre><h5>
+<a name="desfazendo-últimos-3-commits---sem-desfazer-o-código"></a>Desfazendo
+últimos 3 commits - sem desfazer o código</h5>
+<pre style="margin-bottom: 0.5cm"><code>git reset --soft HEAD~3</code></pre><h5>
+<a name="desfazendo-últimos-3-commits---desfazendo-o-código"></a>Desfazendo
+últimos 3 commits - desfazendo o código</h5>
+<pre style="margin-bottom: 0.5cm"><code>git reset --hard HEAD~3</code></pre><h2>
+<a name="reescrevendo-histórico"></a>Reescrevendo Histórico</h2>
+<p>É possível adicionar algo a um commit nos seguintes passos:</p>
+<ul>
+	<li/>
+<p style="margin-bottom: 0cm">Rebase no commit e marcar ele
+	como editado 
+	</p>
+	<li/>
+<p style="margin-bottom: 0cm">Comitar as alterações 
+	</p>
+	<li/>
+<p>Fazer um fix up no commit com seu pai 
+	</p>
+</ul>
+<p>A regra de ouro do rebase
+https://www.atlassian.com/git/tutorials/merging-vs-rebasing?section=the-golden-rule-of-rebasing</p>
+<h2><a name="revert"></a>Revert</h2>
+<p>Desfaz um commit criando um novo commit. Recomendado em branches
+públicas onde o histórico não pode ser reescrito.</p>
+<pre><code>git checkout hotfix</code>
+<code>git revert HEAD~2</code></pre><h2>
+<a name="remotos"></a>Remotos</h2>
+<p>Git é distriuído.</p>
+<h2><a name="remoto-no-filesystem-local"></a>Remoto no filesystem
+local</h2>
+<pre><code>cd /path/to/git-docs</code>
+<code>cd ..</code>
+<code>git clone git-docs other-git-docs</code>
+<code>cd other-git-docs</code>
+<code>git config user.name &quot;other user&quot;</code>
+<code>git config user.email other.user@gmail.com</code>
+
+<code>###do some work</code>
+
+<code>cd ../git-docs</code>
+<code>git remote add other ../other-git-docs</code>
+<code>git merge other/master</code></pre><h2>
+<a name="remoto-online"></a>Remoto online</h2>
+<pre><code>git clone https://github.com/JeanCarloMachado/git-docs</code>
+<code>git push origin new_branch</code></pre><h2>
+<a name="listar-os-repositórios-remotos"></a>Listar os repositórios
+remotos</h2>
+<pre style="margin-bottom: 0.5cm"><code>git remote -v</code></pre><h2>
+<a name="github"></a>Github</h2>
+<p>GitHub é uma rede social.</p>
+<h2><a name="permite"></a>Permite</h2>
+<ul>
+	<li/>
+<p style="margin-bottom: 0cm">Criar repositórios 
+	</p>
+	<li/>
+<p style="margin-bottom: 0cm">Colaborar para repositórios
+	existentes: 
+	</p>
+	<ul>
+		<li/>
+<p style="margin-bottom: 0cm">Criando issues 
+		</p>
+		<li/>
+<p>Submitando pull requests 
+		</p>
+	</ul>
+</ul>
+<h2><a name="outros-serviços"></a>Outros Serviços</h2>
+<h5><a name="githubio-pages"></a>Githubio Pages</h5>
+<p>Hospedar um site com seu usuário.</p>
+<h5><a name="gists"></a>Gists</h5>
+<p>Tipo pastebin</p>
+<h2><a name="ferramentas-auxiliares"></a>Ferramentas Auxiliares</h2>
+<h2><a name="stash"></a>Stash</h2>
+<p>Para salvar trabalhos temporários</p>
+<pre><code>git stash</code>
+<code>git stash apply</code></pre><h2>
+<a name="gitk"></a>Gitk</h2>
+<p>Uma interface nativa para quem gosta de interfaces gráficas</p>
+<h2><a name="aliases"></a>Aliases</h2>
+<pre style="margin-bottom: 0.5cm"><code>git config --global alias.co checkout</code></pre><h2>
+<a name="bash-aliases"></a>Bash aliases</h2>
+<pre style="margin-bottom: 0.5cm"><code>alias g=git</code></pre><h2>
+<a name="lfs"></a><a href="https://git-lfs.github.com/">LFS</a></h2>
+<p>Extensão para trabalhar com arquivos grandes</p>
+<h2><a name="gitignore"></a>Gitignore</h2>
+<p>.gitignore é uma lista de arquivos bloqueados do versionamento</p>
+<h2><a name="hooks"></a>Hooks</h2>
+<p>Com hooks é possível rodar comandos quando eventos ocorrem no
+git.</p>
+<h1><a name="recursos-adicionais"></a>Recursos Adicionais</h1>
+<ul>
+	<li/>
+<p style="margin-bottom: 0cm"><a href="https://git-scm.com/docs">Referência
+	oficial</a> 
+	</p>
+	<li/>
+<p style="margin-bottom: 0cm"><a href="http://rypress.com/tutorials/git/index">Melhor
+	tutorial de Git</a> 
+	</p>
+	<li/>
+<p><a href="http://www.jeancarlomachado.com.br/blog/findingissuesongithub.html">Encontrando
+	issues no gitub</a> 
+	</p>
+</ul>
+</body>
+</html>
