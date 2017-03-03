@@ -37,3 +37,17 @@ alias g=git
 ----------------------------------
 
 Extensão para trabalhar com arquivos grandes
+
+
+Gitignore
+---------
+
+.gitignore é uma lista de arquivos bloqueados do versionamento
+
+
+Hooks
+-----
+
+Com hooks é possível rodar comandos quando eventos ocorrem no git.
+
+
