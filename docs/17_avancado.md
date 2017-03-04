@@ -35,3 +35,5 @@ Comitando (hardcore version)
 Criando um objeto manualmente
 -----------------------------
 
+
+Todo commit é uma hash sha1 e muda conforme o pai for reescrito.
