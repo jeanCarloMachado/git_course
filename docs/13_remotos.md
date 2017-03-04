@@ -21,16 +21,32 @@ git merge other/master
 Remoto online
 ------------
 
-```
-git clone https://github.com/JeanCarloMachado/git-docs
-git push origin new_branch
-```
-
-Listar os repositórios remotos
-------------------------------
+### Listar os repositórios remotos
 
 ```
 git remote -v
 
 ```
+
+### Git remote add origin
+
+```
+git remote add origin git@github.com:compufour/compufacil.git
+git remote add origin https://github.com/user/repo.git
+```
+
+### Mandar para o repositório
+
+```
+git clone https://github.com/JeanCarloMachado/git-docs
+git push origin new_branch
+```
+
+### Baixar do repositório
+
+```
+git pull --rebase
+
+```
+
 

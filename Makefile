@@ -5,7 +5,7 @@ build:
 	cp -rf docs/*.svg site/
 	cp -rf docs/*.png site/
 serve:
-	mkdocs serve
+	mkdocs serve --dev-addr=0.0.0.0:8081
 deploy: build
 	cd /home/jean/projects/git-docs
 	rsync -a site/ root@$(BLOG_IP):/var/www/html/git/
