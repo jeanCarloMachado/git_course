@@ -16,8 +16,9 @@ pages:
     - Desfazendo: '11_desfazendo.md'
     - Reescrevendo Histórico: '12_reescrevendo-historico.md'
     - Remotos: '13_remotos.md'
-    - Github: '14_Github.md'
+    - Github: '14_github.md'
     - Ferramentas Auxiliares: '15_ferramentas-auxiliares-e-produtividade.md'
-- Recursos Adicionais: '16_recursos_adicionais.md'
-- Avançado: 
+- Avançado:
     - Indice: '17_avancado.md'
+    - Comandos Menos comuns: 'comandos_menos_comuns.md'
+- Recursos Adicionais: '16_recursos_adicionais.md'

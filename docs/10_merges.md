@@ -16,3 +16,12 @@ Resolvendo com nossas alterações
 git pull origin master -X ours
 
 ```
+
+
+Mostrando o conteúdo de um commit
+---------------------------------
+
+```
+git show commitId
+
+```
