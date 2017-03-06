@@ -1,11 +1,24 @@
 Operadores relativos
 --------------------
 
+Para funcionar o (^) nos zsh e bash sem necessitar escapar
+----------------------------------------------------------
+
+```
+setopt NO_NOMATCH
+setopt NO_EXTENDED_GLOB
+
+```
+
+
+
 ### Topo da branch atual
 
 ```
 HEAD
+HEAD~ == HEAD~1
 
+git show 34ab345c70^2
 ```
 
 ### 5 commits atrás
@@ -15,12 +28,15 @@ HEAD~5
 
 ```
 
-### Sintaxe alternativa
+### Sintaxe alternativa flexível
 
 ```
 HEAD@{5}
+HEAD@{yesterday}
+HEAD@{2.months.ago}
 
 ```
+
 
 Merge de múltiplas branches
 ---------------------------
