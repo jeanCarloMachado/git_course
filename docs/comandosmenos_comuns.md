@@ -76,3 +76,7 @@ git clean -f
 
 ```
 
+Git rerere
+----------
+
+Para "ensinar" o git a resolver algum tipo de conflito

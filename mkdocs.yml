@@ -20,7 +20,8 @@ pages:
 - Avançado:
     - Indice: 'avancado.md'
     - Operadores Relativos: 'operadores_relativos.md'
-    - Comparando entre branches: 'comparando_entre_branches.md'
+    - Comparando branches: 'comparando_entre_branches.md'
+    - Submódulos: 'submodulos.md'
     - Reescrevendo Histórico: 'reescrevendo-historico.md'
     - Debug: 'debug.md'
     - Comandos Menos comuns: 'comandosmenos_comuns.md'

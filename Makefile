@@ -4,6 +4,7 @@ build:
 	mkdocs build
 	cp -rf docs/*.svg site/
 	cp -rf docs/*.png site/
+	cp -rf site/* jeancarlomachado.github.io/
 serve:
 	mkdocs serve --dev-addr=0.0.0.0:8081
 deploy: build
