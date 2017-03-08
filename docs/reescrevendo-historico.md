@@ -39,3 +39,14 @@ Editar um commit anterior
 git rebase -i HEAD~3
 
 ```
+
+Criando dois commits a partir de 1
+----------------------------------
+
+```
+rebase iterativo com edit
+git reset HEAD^
+... add commit 2x
+rebase --continue
+
+```

@@ -12,6 +12,13 @@ git stash apply
 
 ```
 
+### Visualizar o stash
+
+```
+git stash show -p
+
+```
+
 Gitk
 ----
 
