@@ -33,30 +33,31 @@ Mantendo atualizado
 ```
 git config -f .gitmodules submodule.jeancarlomachado.github.io.branch master
 
-git submodule update  --remote jeancarlomachado.github.io
-ou
 git submodule update --remote
 
 ```
 
-Comitando
----------
+Foreach
+-------
 
+```
+ git submodule foreach "git add . ; git commit -m 'added assets'"
 
-Diff
+```
+
+Push
 ----
 
 ```
-git diff --submodule
-
+git config push.recurseSubmodules on-demand
+git push
 ```
 
-Status
-------
+Diff/Log
+----
 
 ```
- git config status.submodulesummary 1
+git $COMANDO --submodule
 
 ```
-
 

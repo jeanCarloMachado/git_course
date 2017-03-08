@@ -26,4 +26,5 @@ pages:
     - Debug: 'debug.md'
     - Comandos Menos comuns: 'comandosmenos_comuns.md'
     - Integracoes:  'integracoes.md'
+    - Customizando:  'customizando.md'
 - Recursos Adicionais: 'recursos_adicionais.md'
