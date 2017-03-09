@@ -49,4 +49,13 @@ git pull --rebase
 
 ```
 
+Setando remoto e branch padrões
+-------------------------------
 
+Permite usar apenas `git push`, ao invés de `git push origin
+master`.
+
+```
+git branch --set-upstream-to myfork/master
+
+```

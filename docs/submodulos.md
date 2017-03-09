@@ -4,6 +4,7 @@ Criando um submódulo
 
 ```
 git submodule add https://github.com/chaconinc/DbConnector
+git submodule add ../mainrepo.git submoduleDir
 
 git status
 ```
@@ -17,7 +18,6 @@ git submodule init
 git submodule update
 
 ```
-
 
 Inicializando os submódulos em um repositório já configurado
 ------------------------------------------------------------

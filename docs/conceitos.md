@@ -56,3 +56,10 @@ $ git verify-pack -v .git/objects/pack/pack-978e03944f5c581011e6998cd0e9e3000090
 
 ```
 
+Todo commit é uma hash sha1 e muda conforme o pai for reescrito.
+
+HEAD
+----
+
+É a última versão da branch atual.
+Utilizada pelo comando git commit para ser o pai do novo commit.

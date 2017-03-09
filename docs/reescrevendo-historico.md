@@ -1,8 +1,10 @@
 Rebase
 ------
 
+Coloca o histórico da branch atual no topo da branch `target`.
+
 ```
-git rebase master
+git rebase target
 
 ```
 
@@ -56,22 +58,4 @@ Removendo arquivos do último commit
 git rm file_name
 
 ```
-
-filter-branch
--------------
-
-```
-git filter-branch --tree-filter 'rm -rf passwords.txt' HEAD.
-
-```
-
-```
- git filter-branch --force --index-filter \
-'git rm --cached --ignore-unmatch PATH-TO-YOUR-FILE-WITH-SENSITIVE-DATA' \
---prune-empty --tag-name-filter cat -- --all
-
-```
-
-
-
 

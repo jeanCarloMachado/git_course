@@ -34,3 +34,11 @@ git diff --cached > my_patch.patch
 
 ```
 
+Criar um patch de uma branch
+----------------------------
+
+```
+git format-patch master
+
+```
+
