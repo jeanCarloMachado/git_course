@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Comandos - Git Docs</title>
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/highlight.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+	
+	<script src="../js/jquery-1.10.2.min.js"></script>
+        <script src="../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../js/highlight.pack.js"></script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="..">Git Docs</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Git <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="..">Home</a>
+</li>
+                            
+<li >
+    <a href="../historia/">História</a>
+</li>
+                            
+<li >
+    <a href="../pra-que-serve/">Pra que serve</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="active">
+                        <a href="./">Comandos</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">How To's <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../inicializando-projeto/">Inicializando um projeto</a>
+</li>
+                            
+<li >
+    <a href="../criando-historico/">Criando Histórico</a>
+</li>
+                            
+<li >
+    <a href="../patches/">Patches</a>
+</li>
+                            
+<li >
+    <a href="../branches/">Branches</a>
+</li>
+                            
+<li >
+    <a href="../merges/">Merges</a>
+</li>
+                            
+<li >
+    <a href="../desfazendo/">Desfazendo</a>
+</li>
+                            
+<li >
+    <a href="../remotos/">Remotos</a>
+</li>
+                            
+<li >
+    <a href="../github/">Github</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Avançado <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../customizando/">Customizando</a>
+</li>
+                            
+<li >
+    <a href="../ferramentas-auxiliares-e-produtividade/">Ferramentas Auxiliares</a>
+</li>
+                            
+<li >
+    <a href="../criando_servidor/">Criando um servidor git</a>
+</li>
+                            
+<li >
+    <a href="../submodulos/">Submódulos</a>
+</li>
+                            
+<li >
+    <a href="../operadores_relativos/">Operadores Relativos</a>
+</li>
+                            
+<li >
+    <a href="../reescrevendo-historico/">Reescrevendo Histórico</a>
+</li>
+                            
+<li >
+    <a href="../debug/">Debug</a>
+</li>
+                            
+<li >
+    <a href="../manutencao/">Manutenção</a>
+</li>
+                            
+<li >
+    <a href="../recuperando_dados/">Recuperando dados</a>
+</li>
+                            
+<li >
+    <a href="../pumbling/">Pumbling</a>
+</li>
+                            
+<li >
+    <a href="../comandosmenos_comuns/">Comandos Menos comuns</a>
+</li>
+                            
+<li >
+    <a href="../estudos_de_caso/">Estudos de caso</a>
+</li>
+                            
+<li >
+    <a href="../integracoes/">Integracoes</a>
+</li>
+                        </ul>
+                    </li>
+                    <li >
+                        <a href="../conceitos/">Conceitos</a>
+                    </li>
+                    <li >
+                        <a href="../recursos_adicionais/">Recursos Adicionais</a>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="../pra-que-serve/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../inicializando-projeto/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#lista-de-comandos">Lista de Comandos</a></li>
+        <li class="main "><a href="#comandos-existentes">Comandos existentes</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h2 id="lista-de-comandos">Lista de Comandos</h2>
+<p>Git conta com vários comandos, a lista completa se encontra em
+/lib/git-core.</p>
+<p>Para mais detalhes do que como cada um opera pode utilizar</p>
+<pre><code>man git commando
+git commando --help
+
+</code></pre>
+
+<h2 id="comandos-existentes">Comandos existentes</h2>
+<ul>
+<li>git</li>
+<li>add</li>
+<li>add--interactive</li>
+<li>am</li>
+<li>annotate</li>
+<li>apply</li>
+<li>archimport</li>
+<li>archive</li>
+<li>bisect</li>
+<li>bisect--helper</li>
+<li>blame</li>
+<li>branch</li>
+<li>bundle</li>
+<li>cat-file</li>
+<li>check-attr</li>
+<li>check-ignore</li>
+<li>check-mailmap</li>
+<li>checkout</li>
+<li>checkout-index</li>
+<li>check-ref-format</li>
+<li>cherry</li>
+<li>cherry-pick</li>
+<li>citool</li>
+<li>clean</li>
+<li>clone</li>
+<li>column</li>
+<li>commit</li>
+<li>commit-tree</li>
+<li>config</li>
+<li>count-objects</li>
+<li>credential</li>
+<li>credential-cache</li>
+<li>credential-cache--daemon</li>
+<li>credential-gnome-keyring</li>
+<li>credential-libsecret</li>
+<li>credential-store</li>
+<li>cvsexportcommit</li>
+<li>cvsimport</li>
+<li>cvsserver</li>
+<li>daemon</li>
+<li>describe</li>
+<li>diff</li>
+<li>diff-files</li>
+<li>diff-index</li>
+<li>difftool</li>
+<li>difftool--helper</li>
+<li>diff-tree</li>
+<li>draw</li>
+<li>fast-export</li>
+<li>fast-import</li>
+<li>fetch</li>
+<li>fetch-pack</li>
+<li>filter-branch</li>
+<li>fmt-merge-msg</li>
+<li>for-each-ref</li>
+<li>format-patch</li>
+<li>fsck</li>
+<li>fsck-objects</li>
+<li>gc</li>
+<li>get-tar-commit-id</li>
+<li>grep</li>
+<li>gui</li>
+<li>gui--askpass</li>
+<li>hash-object</li>
+<li>help</li>
+<li>http-backend</li>
+<li>http-fetch</li>
+<li>http-push</li>
+<li>imap-send</li>
+<li>index-pack</li>
+<li>init</li>
+<li>init-db</li>
+<li>instaweb</li>
+<li>interpret-trailers</li>
+<li>log</li>
+<li>ls-files</li>
+<li>ls-remote</li>
+<li>ls-tree</li>
+<li>mailinfo</li>
+<li>mailsplit</li>
+<li>merge</li>
+<li>merge-base</li>
+<li>merge-file</li>
+<li>merge-index</li>
+<li>merge-octopus</li>
+<li>merge-one-file</li>
+<li>merge-ours</li>
+<li>merge-recursive</li>
+<li>merge-resolve</li>
+<li>merge-subtree</li>
+<li>mergetool</li>
+<li>mergetool--lib</li>
+<li>merge-tree</li>
+<li>mktag</li>
+<li>mktree</li>
+<li>mv</li>
+<li>name-rev</li>
+<li>notes</li>
+<li>p4</li>
+<li>pack-objects</li>
+<li>pack-redundant</li>
+<li>pack-refs</li>
+<li>parse-remote</li>
+<li>patch-id</li>
+<li>prune</li>
+<li>prune-packed</li>
+<li>pull</li>
+<li>push</li>
+<li>quiltimport</li>
+<li>read-tree</li>
+<li>rebase</li>
+<li>rebase--am</li>
+<li>rebase--interactive</li>
+<li>rebase--merge</li>
+<li>receive-pack</li>
+<li>reflog</li>
+<li>remote</li>
+<li>remote-ext</li>
+<li>remote-fd</li>
+<li>remote-ftp</li>
+<li>remote-ftps</li>
+<li>remote-http</li>
+<li>remote-https</li>
+<li>remote-testsvn</li>
+<li>repack</li>
+<li>replace</li>
+<li>request-pull</li>
+<li>rerere</li>
+<li>reset</li>
+<li>revert</li>
+<li>rev-list</li>
+<li>rev-parse</li>
+<li>rm</li>
+<li>send-email</li>
+<li>send-pack</li>
+<li>shell</li>
+<li>sh-i18n</li>
+<li>sh-i18n--envsubst</li>
+<li>shortlog</li>
+<li>show</li>
+<li>show-branch</li>
+<li>show-index</li>
+<li>show-ref</li>
+<li>sh-setup</li>
+<li>stage</li>
+<li>stash</li>
+<li>status</li>
+<li>stripspace</li>
+<li>submodule</li>
+<li>submodule--helper</li>
+<li>subtree</li>
+<li>svn</li>
+<li>symbolic-ref</li>
+<li>tag</li>
+<li>unpack-file</li>
+<li>unpack-objects</li>
+<li>update-index</li>
+<li>update-ref</li>
+<li>update-server-info</li>
+<li>upload-archive</li>
+<li>upload-pack</li>
+<li>var</li>
+<li>verify-commit</li>
+<li>verify-pack</li>
+<li>verify-tag</li>
+<li>web--browse</li>
+<li>whatchanged</li>
+<li>worktree</li>
+<li>write-tree</li>
+<li>mergetools</li>
+</ul></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>var base_url = '..';</script>
+        <script data-main="../mkdocs/js/search.js" src="../mkdocs/js/require.js"></script>
+        <script src="../js/base.js"></script><div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

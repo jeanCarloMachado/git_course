@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Conceitos - Git Docs</title>
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/highlight.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+	
+	<script src="../js/jquery-1.10.2.min.js"></script>
+        <script src="../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../js/highlight.pack.js"></script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="..">Git Docs</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Git <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="..">Home</a>
+</li>
+                            
+<li >
+    <a href="../historia/">História</a>
+</li>
+                            
+<li >
+    <a href="../pra-que-serve/">Pra que serve</a>
+</li>
+                        </ul>
+                    </li>
+                    <li >
+                        <a href="../comandos/">Comandos</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">How To's <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../inicializando-projeto/">Inicializando um projeto</a>
+</li>
+                            
+<li >
+    <a href="../criando-historico/">Criando Histórico</a>
+</li>
+                            
+<li >
+    <a href="../patches/">Patches</a>
+</li>
+                            
+<li >
+    <a href="../branches/">Branches</a>
+</li>
+                            
+<li >
+    <a href="../merges/">Merges</a>
+</li>
+                            
+<li >
+    <a href="../desfazendo/">Desfazendo</a>
+</li>
+                            
+<li >
+    <a href="../remotos/">Remotos</a>
+</li>
+                            
+<li >
+    <a href="../github/">Github</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Avançado <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../customizando/">Customizando</a>
+</li>
+                            
+<li >
+    <a href="../ferramentas-auxiliares-e-produtividade/">Ferramentas Auxiliares</a>
+</li>
+                            
+<li >
+    <a href="../criando_servidor/">Criando um servidor git</a>
+</li>
+                            
+<li >
+    <a href="../submodulos/">Submódulos</a>
+</li>
+                            
+<li >
+    <a href="../operadores_relativos/">Operadores Relativos</a>
+</li>
+                            
+<li >
+    <a href="../reescrevendo-historico/">Reescrevendo Histórico</a>
+</li>
+                            
+<li >
+    <a href="../debug/">Debug</a>
+</li>
+                            
+<li >
+    <a href="../manutencao/">Manutenção</a>
+</li>
+                            
+<li >
+    <a href="../recuperando_dados/">Recuperando dados</a>
+</li>
+                            
+<li >
+    <a href="../pumbling/">Pumbling</a>
+</li>
+                            
+<li >
+    <a href="../comandosmenos_comuns/">Comandos Menos comuns</a>
+</li>
+                            
+<li >
+    <a href="../estudos_de_caso/">Estudos de caso</a>
+</li>
+                            
+<li >
+    <a href="../integracoes/">Integracoes</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="active">
+                        <a href="./">Conceitos</a>
+                    </li>
+                    <li >
+                        <a href="../recursos_adicionais/">Recursos Adicionais</a>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="../integracoes/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../recursos_adicionais/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#historico-em-grafo">Histórico em grafo</a></li>
+        <li class="main "><a href="#areas-de-armazemanto-do-git">Áreas de armazemanto do git</a></li>
+        <li class="main "><a href="#fast-forward-merge">Fast-forward merge</a></li>
+        <li class="main "><a href="#recursive-merge">Recursive merge</a></li>
+        <li class="main "><a href="#packfiles">Packfiles</a></li>
+        <li class="main "><a href="#head">HEAD</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h2 id="historico-em-grafo">Histórico em grafo</h2>
+<p>Os commits no git são estruturados em forma de grafo</p>
+<p><img alt="Grafo acíclico" src="../direct-acyclic-graph.svg" /></p>
+<h2 id="areas-de-armazemanto-do-git">Áreas de armazemanto do git</h2>
+<p>Git tem 3 áreas de armazenamento principais</p>
+<ul>
+<li>Staging (index)</li>
+<li>Repositório Local</li>
+<li>Repositório Remoto</li>
+</ul>
+<p><img alt="Comandos de trasporte e áreas de armazenamento" src="../git-transport.png" /></p>
+<h2 id="fast-forward-merge">Fast-forward merge</h2>
+<p>Acontece quando o histórico do merge está a frente do HEAD atual,
+então move-se apenas o ponteiro da branch.</p>
+<h2 id="recursive-merge">Recursive merge</h2>
+<p>É um merge de 3 vias.</p>
+<p>Usando os snapshots das duas branches e o ancestral comum dos
+dois.</p>
+<p>É criado um commit com dois pais.</p>
+<pre><code>You might be best off looking for a description of a 3-way merge algorithm. A high-level description would go something like this:
+
+Find a suitable merge base B - a version of the file that is an ancestor of both of the new versions (X and Y), and usually the most recent such base (although there are cases where it will have to go back further, which is one of the features of  gits default recursive merge)
+Perform diffs of X with B and Y with B.
+Walk through the change blocks identified in the two diffs. If both sides introduce the same change in the same spot, accept either one; if one introduces a change and the other leaves that region alone, introduce the change in the final; if both introduce changes in a spot, but they don't match, mark a conflict to be resolved manually.
+The full algorithm deals with this in a lot more detail, and even has some documentation (/usr/share/doc/git-doc/technical/trivial-merge.txt for one, along with the git help XXX pages, where XXX is one of merge-base, merge-file, merge, merge-one-file and possibly a few others). If that's not deep enough, there's always source code...
+</code></pre>
+
+<h2 id="packfiles">Packfiles</h2>
+<p>São arquivos "otimizados" para remover tamanho desenecessários do
+sistema.</p>
+<pre><code>$ git verify-pack -v .git/objects/pack/pack-978e03944f5c581011e6998cd0e9e30000905586.idx
+
+</code></pre>
+
+<p>Todo commit é uma hash sha1 e muda conforme o pai for reescrito.</p>
+<h2 id="head">HEAD</h2>
+<p>É a última versão da branch atual.
+Utilizada pelo comando git commit para ser o pai do novo commit.</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>var base_url = '..';</script>
+        <script data-main="../mkdocs/js/search.js" src="../mkdocs/js/require.js"></script>
+        <script src="../js/base.js"></script><div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
