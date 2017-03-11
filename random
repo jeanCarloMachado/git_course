@@ -1,4 +1,5 @@
 #!/bin/bash
+#release 1.1
 
 export rand=$(( $RANDOM % 10 ))
 exit $(( $rand % 2 ))
