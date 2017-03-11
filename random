@@ -1,3 +1,4 @@
 #!/bin/bash
 
-export rand=$(( $RANDOM % 10 )); exit $(( $rand % 2 ))
+export rand=$(( $RANDOM % 10 ))
+exit $(( $rand % 2 ))
