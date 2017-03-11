@@ -25,3 +25,7 @@ make doc
 
 ```
 
+TODO
+----
+
+Adicionar exercícios
