@@ -31,7 +31,7 @@ Mantendo atualizado
 -------------------
 
 ```
-git config -f .gitmodules submodule.[repoName].branch master
+git config -f .gitmodules submodule.jeancarlomachado.github.io.branch master
 
 git submodule update --remote
 
