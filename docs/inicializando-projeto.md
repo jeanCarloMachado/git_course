@@ -1,6 +1,3 @@
-Inicializando projeto
-=====================
-
 Init
 ----
 

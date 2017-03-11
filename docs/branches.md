@@ -1,15 +1,10 @@
-Branches
-========
-
-Uma branch é uma linha de trabalho independente. Podem ser usadas para
-diversos propósitos.
+Uma branch é uma linha de trabalho independente. Podem ser usadas para diversos propósitos.
 
 Pode-se ter uma branch para:
 
  - experimentar uma tecnologia nova;
  - uma branch para um bug-fix;
  - outra para o trabalho do sprint;
-
 
 A branch padrão no git é a `master`. Para listar todas as branches
 use: `git branch`

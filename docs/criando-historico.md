@@ -1,6 +1,3 @@
-Criando Histórico
-=================
-
 Add
 ---
 Git add adiciona arquivos a uma área temporária
@@ -9,7 +6,6 @@ para compor um commit (staging).
 ```
 git add $ARQUIVO|$DIRETORIO
 ```
-
 
 Commit
 ------
@@ -27,3 +23,12 @@ O commit transfere as informações para o repositório local.
 
 Boas práticas de nomenclatura de commits
 https://www.alexkras.com/19-git-tips-for-everyday-use/#good-commit-message
+
+Status
+------
+
+```
+git status
+git status -s  #versão resumida
+
+```
