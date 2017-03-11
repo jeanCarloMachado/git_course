@@ -131,3 +131,11 @@ require 'fileutils'
 FileUtils.mkdir_p(File.dirname(path))
 File.open(path, 'w') {|f| f.write zlib_content}
 ```
+
+Inspecionando objetos
+---------------------
+
+```
+cat .git/objects/28/e697e796c79e4c86fcb62e5319a43dfcf1fb83 | zlib-flate -uncompress
+
+```
