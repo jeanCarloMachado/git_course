@@ -29,3 +29,7 @@ TODO
 ----
 
 Adicionar exercícios
+
+Boas práticas de nomenclatura
+de branch
+de commit
