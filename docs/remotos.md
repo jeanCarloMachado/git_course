@@ -59,3 +59,16 @@ master`.
 git branch --set-upstream-to myfork/master
 
 ```
+
+SSH
+---
+
+### Criando chaves
+
+### Adicionando chaves
+
+```
+cat ~/.ssh/id_rsa.pub | copy
+
+```
+
