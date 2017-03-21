@@ -15,6 +15,7 @@ pages:
     - Desfazendo: 'desfazendo.md'
     - Remotos: 'remotos.md'
     - Github: 'github.md'
+    - Boas Práticas: 'boas_praticas.md'
 - Avançado:
     - Customizando:  'customizando.md'
     - Ferramentas Auxiliares: 'ferramentas-auxiliares-e-produtividade.md'
