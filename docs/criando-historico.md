@@ -74,23 +74,3 @@ $ mkdocs serve
 $ browser http://localhost:8000
 ```
 
-### Desfazendo
-
-```
-echo "Historia do git" >docs/historia.md
-echo "[Historia](historia.md)" >>docs/index.md
-git add .
-git commit  -m "adicionado arquivos sobre historia"
-echo "Git foi criado em 2005 por Linus Torvalds, o criador do Linux" >>docs/historia.md
-git commit -a -m "detalhes sobre a historia"
-
-```
-
-```
-git checkout HEAD~1 docs/historia.md
-git checkout HEAD docs/historia.md
-```
-
-Git também serve para:
-
-

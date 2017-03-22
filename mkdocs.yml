@@ -9,9 +9,9 @@ pages:
 - How To's:
     - Inicializando um projeto: 'inicializando-projeto.md'
     - Criando Histórico: 'criando-historico.md'
-    - Patches: 'patches.md'
     - Branches: 'branches.md'
     - Merges: 'merges.md'
+    - Patches: 'patches.md'
     - Desfazendo: 'desfazendo.md'
     - Remotos: 'remotos.md'
     - Github: 'github.md'

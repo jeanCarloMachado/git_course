@@ -20,27 +20,3 @@ git apply 0001-recursos_adicionais.patch
 
 O comando checkout serve para criar a branch e entrar nela.
 
-### Merge
-
-Merge mescla o conteúdo de branches
-
-```sh
-git commit -m "mais modificações"
-git merge recursos_adicionais
-git log
-
-```
-
-### Fluxos de trabalho
-
-Existem vários fluxos de trabalho de branches.
-
- - Githubflow
- - git flow
- - branch por tópico
-
-Mais sobre fluxos de trabalho
-
- - https://git-scm.com/book/en/v2/Distributed-Git-Distributed-Workflows#_distributed_git
- - https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows
-

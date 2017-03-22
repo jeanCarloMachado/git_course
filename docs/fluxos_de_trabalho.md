@@ -40,3 +40,13 @@ Estudando fluxos de projetos open-source
  - Pull-requests
  - [Contributing](https://github.com/nodejs/node/blob/master/CONTRIBUTING.md)
  - [Collaborator Guide](https://github.com/nodejs/node/blob/master/COLLABORATOR_GUIDE.md)
+
+
+
+
+Mais sobre o assunto
+--------------------
+
+ - https://git-scm.com/book/en/v2/Distributed-Git-Distributed-Workflows#_distributed_git
+ - https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows
+

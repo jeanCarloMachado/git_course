@@ -34,6 +34,7 @@ git diff --cached > my_patch.patch
 
 ```
 
+
 Criar um patch de uma branch
 ----------------------------
 
@@ -41,4 +42,16 @@ Criar um patch de uma branch
 git format-patch master
 
 ```
+
+Exercícios
+----------
+
+```sh
+Altere o conteúdo do seu projeto em uma nova branch, commite e
+conteúdo e gere um patch da branch.
+
+Em outra branch aplique as modificações.
+
+```
+
 

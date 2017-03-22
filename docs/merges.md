@@ -1,3 +1,12 @@
+### Merge
+
+Merge mescla o conteúdo de branches
+
+```sh
+git merge recursos_adicionais
+git log
+
+```
 
 Fast-forward: move o ponteiro da master para o último commit da
 branch.
