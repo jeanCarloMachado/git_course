@@ -9,5 +9,6 @@ Links
 
 Livros
 ------
- - Git Pro (o melhor)
- - Git - Pragmatic bookshelf
+ - [Git Pro](https://git-scm.com/book/en/v2)
+ - [Pragmatic Version Control Using Git - Pragmatic
+     bookshelf](https://pragprog.com/book/tsgit/pragmatic-version-control-using-git)

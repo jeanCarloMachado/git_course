@@ -1,26 +1,27 @@
+Github
+------
+
 GitHub é uma rede social.
 
 
-Permite
--------
+### Permite
 
 - Criar repositórios
 - Colaborar para repositórios existentes:
     - Criando issues
     - Submitando pull requests
 
-Configurar ssh keys
--------------------
+### Outros Serviços
 
-Outros Serviços
----------------
-
-### Githubio Pages
+#### Githubio Pages
 
 Hospedar um site com seu usuário.
 
-### Gists
+#### Gists
 
 Tipo pastebin
 
+Gitlab
+------
 
+Permite fazer as mesmas coisas que o github 

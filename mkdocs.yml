@@ -15,8 +15,7 @@ pages:
     - Recuperando: 'recuperando_no_historico.md'
     - Desfazendo: 'desfazendo.md'
     - Remotos: 'remotos.md'
-    - Github: 'github.md'
-    - Gitlab: 'gitlab.md'
+    - Github & Gitlab: 'github_gitlab.md'
     - Boas Práticas: 'boas_praticas.md'
     - Fluxos de trabalho: 'fluxos_de_trabalho.md'
 - Avançado:

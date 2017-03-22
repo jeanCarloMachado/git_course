@@ -10,7 +10,6 @@ Externa e internamente
 
 Iniciar, manter e participar de projetos versionados com Git 
 
-
 Objetivos do módulo
 -------------------
 
@@ -20,9 +19,7 @@ Sobre
 -----
 
 - Desenvolvedor de software com mais de 6 anos de experiência
-
 - Foco em HPC, infraestrutura e qualidade
-
 - Unix Fan
 
 Ementa
@@ -57,17 +54,17 @@ Mão na massa!
 Pra que serve?
 ==============
 
-Entendendo init, add, commit
-============================
-
-Patches
-=======
+Criando histórico
+=================
 
 Branches
 ========
 
 Merges
 ======
+
+Patches
+=======
 
 Desfazendo
 ==========
