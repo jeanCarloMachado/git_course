@@ -5,13 +5,14 @@ build:
 	mkdocs build
 	cp -rf docs/*.svg site/
 	cp -rf docs/*.png site/
-	cp -rf site/* jeancarlomachado.github.io/
 serve:
 	mkdocs serve --dev-addr=0.0.0.0:8081 &
 	${BROWSER} http://localhost:8081 &
-deploy: build
+deploy_server: build
 	cd /home/jean/projects/git-docs
 	rsync -a site/ root@$(BLOG_IP):/var/www/html/git/
+deploy_githubio: build
+	cp -rf site/* githubio/
 clear:
 	rm -rf site/*
 	rm -rf presentation.pdf
