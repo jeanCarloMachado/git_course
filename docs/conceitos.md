@@ -8,15 +8,23 @@ Os commits no git são estruturados em forma de grafo
 Áreas de armazemanto do git
 ---------------------------
 
-Git tem 3 áreas de armazenamento principais
+Git tem 4 áreas de armazenamento principais
 
- - Staging (index)
- - Repositório Local
- - Repositório Remoto
+### Área de trabalho
+### Staging (index)
+
+Para remover do stagin use *git reset*.
+
+### Repositório Local
+### Repositório Remoto
 
 ![Comandos de trasporte e áreas de armazenamento](git-transport.png)
 
+Três estágios de informação
 
+- Comitado
+- Modificado
+- Em staging
 
 Fast-forward merge
 ------------------

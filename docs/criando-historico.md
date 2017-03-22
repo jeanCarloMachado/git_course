@@ -63,7 +63,18 @@ Comite esse arquivo
 Consulte a versão anterior com o gitk
 ```
 
-### Criando
+### Setup mkdocs
+
+
+```
+$ pip install mkdocs
+$ mkdocs new git-docs
+$ cd git-docs
+$ mkdocs serve
+$ browser http://localhost:8000
+```
+
+### Desfazendo
 
 ```
 echo "Historia do git" >docs/historia.md
@@ -74,8 +85,6 @@ echo "Git foi criado em 2005 por Linus Torvalds, o criador do Linux" >>docs/hist
 git commit -a -m "detalhes sobre a historia"
 
 ```
-
-### Desfazendo
 
 ```
 git checkout HEAD~1 docs/historia.md

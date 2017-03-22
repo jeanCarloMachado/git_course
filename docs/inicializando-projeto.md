@@ -1,3 +1,21 @@
+Ajuda
+-----
+
+Para ajuda genérica pode-se utilizar
+
+```sh
+git --help
+man git
+
+```
+Para mais detalhes do que como cada comando opera pode utilizar
+
+```sh
+man git commando
+git commando --help
+
+```
+
 Init
 ----
 

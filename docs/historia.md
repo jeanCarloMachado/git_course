@@ -16,3 +16,9 @@ Alguns significados para o termo:
  - Suporte a desenvolvimento não-linear (branches)
  - Totalmente distribuído
  - Capaz de lidar com projetos gigantes
+
+
+### Concorrentes
+
+ - Subversion
+ - Perforce

@@ -10,11 +10,12 @@ A branch padrão no git é a `master`. Para listar todas as branches
 use: `git branch`
 
 
-```
+```sh
 git commit "informações sobre branches no master"
 git checkout -b "recursos_adicionais" #cria outra linha de trabalho
 curl -L https://goo.gl/XlMc3m -o 0001-recursos_adicionais.patch
 git apply 0001-recursos_adicionais.patch
+
 ```
 
 O comando checkout serve para criar a branch e entrar nela.
@@ -23,10 +24,11 @@ O comando checkout serve para criar a branch e entrar nela.
 
 Merge mescla o conteúdo de branches
 
-```
+```sh
 git commit -m "mais modificações"
 git merge recursos_adicionais
 git log
+
 ```
 
 ### Fluxos de trabalho

@@ -1,18 +1,26 @@
+Modelos de versionamento
+-------------------
 
-Estudando fluxos de projetos open-source
-----------------------------------------
+### Hierárquico
 
+### Centralizado
+
+### Distribuído
+
+
+Git flow
+--------
 
 - master
 - develop
 - topic
 
+Githubflow
+----------
 
+Estudando fluxos de projetos open-source
+----------------------------------------
 
-
-### Git
-
- - Mailing list + patches
 
 ### Kernel
 
