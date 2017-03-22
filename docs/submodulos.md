@@ -4,6 +4,7 @@ Criando um submódulo
 
 ```
 git submodule add https://github.com/chaconinc/DbConnector
+git submodule add git@github.com:jeanCarloMachado/jeancarlomachado.github.io.git
 git submodule add ../mainrepo.git submoduleDir
 
 git status
@@ -31,7 +32,7 @@ Mantendo atualizado
 -------------------
 
 ```
-git config -f .gitmodules submodule.jeancarlomachado.github.io.branch master
+git config -f .gitmodules submodule.githubiobranch master
 
 git submodule update --remote
 

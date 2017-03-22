@@ -13,6 +13,7 @@ deploy_server: build
 	rsync -a site/ root@$(BLOG_IP):/var/www/html/git/
 deploy_githubio: build
 	cp -rf site/* githubio/
+	git push
 clear:
 	rm -rf site/*
 	rm -rf presentation.pdf
