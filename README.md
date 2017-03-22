@@ -30,6 +30,5 @@ TODO
 
 Adicionar exercícios
 
-Boas práticas de nomenclatura
-de branch
-de commit
+ - Boas práticas de nomenclatura de branch e commit
+ - Colocar representações visuais das branches

@@ -1,21 +1,45 @@
-### O que ainda não está comitado
+### Remover do staging o que ainda não está comitado
+
+```sh
+git reset HEAD
 
 ```
-git reset --hard HEAD
+
+ou
+
+```sh
+git reset HEAD file.txt
 
 ```
-
 ### Remover arquivos criados mas não versionados
 
-```
-git ls-files --others --exclude-standard | xargs rm
+```sh
+git clean
 
 ```
 
-### Remover do staging
+
+Desfazer modificações não comitadas
+-----------------------------------
+
+```sh
+git checkout -- filename
 
 ```
-git reset HEAD $FILE
+
+
+### Trocar a última mensagem de commit
+
+```
+git commit --amend
+
+```
+
+### Adicionando um arquivo ao commit anterior
+
+```
+git add file_x.md
+git commit --amend
 
 ```
 
@@ -27,13 +51,6 @@ públicas onde o histórico não pode ser reescrito.
 ```
 git checkout hotfix
 git revert HEAD~2
-
-```
-
-### Trocar a última mensagem de commit
-
-```
-git commit --amend
 
 ```
 

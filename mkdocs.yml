@@ -8,10 +8,11 @@ pages:
 - Comandos: 'comandos.md'
 - How To's:
     - Inicializando um projeto: 'inicializando-projeto.md'
-    - Criando Histórico: 'criando-historico.md'
+    - Criando Histórico: 'criando_historico.md'
     - Branches: 'branches.md'
     - Merges: 'merges.md'
     - Patches: 'patches.md'
+    - Recuperando: 'recuperando_no_historico.md'
     - Desfazendo: 'desfazendo.md'
     - Remotos: 'remotos.md'
     - Github: 'github.md'

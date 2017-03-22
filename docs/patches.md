@@ -21,16 +21,17 @@ curl -L https://goo.gl/p1LEc7 -o 0001-historia.patch
 git apply 0001-historia.patch
 ```
 
-Diff e show
------------
+Diff e show e log
+----------------
 
-O resultado de `git show` e `git diff` também são comapatíveis com 
+O resultado destes comandos também são compatíveis com
 patches do git.
 
 ```
 git diff > my_patch.patch
 git show > my_patch.patch
 git diff --cached > my_patch.patch
+git log -p
 
 ```
 

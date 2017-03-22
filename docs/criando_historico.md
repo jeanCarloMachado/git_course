@@ -22,34 +22,36 @@ git commit
 
 O commit transfere as informações para o repositório local.
 
-Boas práticas de nomenclatura de commits
-https://www.alexkras.com/19-git-tips-for-everyday-use/#good-commit-message
+Para pular a fase de staging em arquivos já existentes:
 
-Consultando o histórico com o gitk
-----------------------------------
+```sh
+git commit -a
 
 ```
+
+Consultando o histórico
+-----------------------
+
+### Gitk
+
+```sh
 gitk
 
 ```
-
 ou
 
-```
+```sh
 gitk nome_do_arquivo
 
 ```
 
-### Recuperando arquivos
+### Git log
 
-```
+```sh
 git log
-rm -rf docs
-browser http://localhost:8000
-git reset --hard HEAD
-browser http://localhost:8000
 
 ```
+
 
 Exercício
 ---------
@@ -74,3 +76,27 @@ $ mkdocs serve
 $ browser http://localhost:8000
 ```
 
+
+Removendo arquivos
+------------------
+
+git rm --cached foo.txt//staging
+git rm foo.txt
+
+
+Renomeando arquivos
+-------------------
+
+```sh
+git mv REDME.md README
+
+```
+
+é equivalente a
+
+```sh
+mv README.md README
+git rm README.md
+git add README
+
+```

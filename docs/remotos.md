@@ -42,10 +42,28 @@ git clone https://github.com/JeanCarloMachado/git-docs
 git push origin new_branch
 ```
 
-### Baixar do repositório
+### Baixar as modificações remotas no local
+
+```sh
+git fetch origin 
 
 ```
-git pull --rebase
+
+
+### Pull
+
+O *git pull* faz um fetch mais um merge.
+
+```
+git pull origin master
+
+```
+
+Inspecionando remoto
+--------------------
+
+```sh
+git remote show origin
 
 ```
 
