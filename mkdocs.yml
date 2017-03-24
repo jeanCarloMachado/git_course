@@ -4,9 +4,9 @@ pages:
 - Git:
     - Home: 'index.md'
     - História: 'historia.md'
+    - Comandos: 'comandos.md'
+- Básico:
     - Pra que serve: 'pra-que-serve.md'
-- Comandos: 'comandos.md'
-- How To's:
     - Inicializando um projeto: 'inicializando-projeto.md'
     - Criando Histórico: 'criando_historico.md'
     - Branches: 'branches.md'
@@ -24,6 +24,7 @@ pages:
     - Criando um servidor git: 'criando_servidor.md'
     - Submódulos: 'submodulos.md'
     - Operadores Relativos: 'operadores_relativos.md'
+    - Resolvendo Conflitos: 'resolvendo_conflitos.md'
     - Reescrevendo Histórico: 'reescrevendo-historico.md'
     - Debug: 'debug.md'
     - Manutenção: 'manutencao.md'

@@ -68,3 +68,5 @@ HEAD
 
 É a última versão da branch atual.
 Utilizada pelo comando git commit para ser o pai do novo commit.
+
+

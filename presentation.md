@@ -51,36 +51,3 @@ Modelo do Curso
 Mão na massa!
 =============
 
-Pra que serve?
-==============
-
-Criando histórico
-=================
-
-Branches
-========
-
-Merges
-======
-
-Patches
-=======
-
-Desfazendo
-==========
-
-Reescrevendo Histórico
-======================
-
-Remotos
-=======
-
-GitHub
-======
-
-Utilitários e produtividade
-===========================
-
-Obrigado
-========
-

@@ -141,9 +141,16 @@ last_diff_file() {
 
 ### Logs
 
+Customizar logs é uma arte.
+
 ```sh
 git config --global alias.hist "log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short"
 git config --global alias.lol "log --graph --decorate --pretty=oneline --abbrev-commit --all"
 git config --global alias.mylog "log --pretty=format:'%h %s [%an]' --graph"
 
 ```
+
+
+#### Opções
+
+--decorate  mostra as braches apontando para determinados commits

@@ -1,5 +1,3 @@
-Git é distriuído.
-
 Remoto no filesystem local
 --------------------------
 
@@ -10,6 +8,7 @@ git clone git-docs other-git-docs
 cd other-git-docs
 git config user.name "other user"
 git config user.email other.user@gmail.com
+git ls-remote
 
 
 //do some work
@@ -45,11 +44,9 @@ git push origin new_branch
 ### Baixar as modificações remotas no local
 
 ```sh
-git fetch origin 
+git fetch origin
 
 ```
-
-
 ### Pull
 
 O *git pull* faz um fetch mais um merge.
@@ -63,7 +60,9 @@ Inspecionando remoto
 --------------------
 
 ```sh
+git remote show
 git remote show origin
+git ls-remote
 
 ```
 

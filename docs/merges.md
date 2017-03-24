@@ -1,36 +1,27 @@
-### Merge
 
-Merge mescla o conteúdo de branches
+Fast-forward
+------------
+
+Muda o ponteiro do commit
+
+
+Recursive
+---------
+
+Cria um commit adicional com dois ou mais pais
+
+
+Conflitos
+---------
 
 ```sh
-git merge recursos_adicionais
-git log
+git status
 
 ```
 
-Fast-forward: move o ponteiro da master para o último commit da
-branch.
-
-```
-git merge --fast-forward
+```sh
+git mergetool
 
 ```
 
 
-Resolvendo com nossas alterações
---------------------------------
-
-
-```
-git pull origin master -X ours
-
-```
-
-
-Mostrando o conteúdo de um commit
----------------------------------
-
-```
-git show commitId
-
-```
