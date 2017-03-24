@@ -27,6 +27,27 @@ git remote -v
 
 ```
 
+Inspecionando remoto
+--------------------
+
+```sh
+git remote show
+git remote show origin
+git ls-remote
+
+```
+Branches remotas
+----------------
+
+Usar o padrão [remoto/branch]
+
+```sh
+git show origin/master
+
+```
+
+![Git fetch não faz merge](git_fetch.png)
+
 ### Git remote add origin
 
 ```
@@ -56,15 +77,6 @@ git pull origin master
 
 ```
 
-Inspecionando remoto
---------------------
-
-```sh
-git remote show
-git remote show origin
-git ls-remote
-
-```
 
 Setando remoto e branch padrões
 -------------------------------
@@ -77,10 +89,35 @@ git branch --set-upstream-to myfork/master
 
 ```
 
+Começando trabalho a partir de uma branch remota
+------------------------------------------------
+
+```sh
+git checkout nome_da_branch_remota
+ou
+git checkout -b branch_remota origin/branch_remota
+
+```
+
+Listar as braches sincronizadas com o servidor
+----------------------------------------------
+
+```sh
+git branch -vv
+
+```
+
 SSH
 ---
 
+
 ### Criando chaves
+
+```sh
+cd ~/.ssh
+ssh-keygen
+
+```
 
 ### Adicionando chaves
 
@@ -89,3 +126,22 @@ cat ~/.ssh/id_rsa.pub | copy
 
 ```
 
+Credenciais https
+-----------------
+
+```sh
+git config --global credential.helper 'cache --timeout=3600'
+
+```
+
+
+Exercícios
+----------
+
+```sh
+Crie uma conta no github
+Crie um repositório para o projeto do git
+Envie as modificações para lá via http
+Configure suas chaves ssh
+Envie novas modificações via ssh
+```

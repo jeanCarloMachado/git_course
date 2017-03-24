@@ -32,3 +32,5 @@ Adicionar exercícios
 
  - Boas práticas de nomenclatura de branch e commit
  - Colocar representações visuais das branches
+
+A copy can be found on https://jeancarlomachado.github.io/.

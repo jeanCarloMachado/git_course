@@ -46,6 +46,8 @@ Modelo do Curso
 
  - Não nos determos em ferramentas gráficas
  - Perguntem, e o que eu não conseguir responde no módulo 2 matamos
+ - Ninguém consegue decorar tudo, uma wiki é um ótimo recurso pra
+     ajudr a "saber".
 
 
 Mão na massa!
