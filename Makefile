@@ -19,8 +19,10 @@ clear:
 	rm -rf site/*
 	rm -rf presentation.pdf
 doc: build
-	 mkdocs2pandoc > document.pd
-	 pandoc --toc -f markdown+grid_tables+table_captions -o document.docx document.pd
+	 mkdocs2pandoc > material.pd
+	 pandoc --toc -f markdown+grid_tables+table_captions -o material.docx material.pd
+pdf:
+	 pandoc material.docx -o material.pdf
 presentation:
 	pandoc --slide-level 2 --latex-engine=xelatex --highlight-style=tango -t beamer -V fontsize=10pt -H presentation.tex presentation.md -o presentation.pdf
 serve_presentation: presentation_watch

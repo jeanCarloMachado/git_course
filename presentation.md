@@ -15,12 +15,6 @@ Objetivos do módulo
 
 Entender os comandos porcelana do git com profundidade.
 
-Sobre
------
-
-- Desenvolvedor de software com mais de 6 anos de experiência
-- Foco em HPC, infraestrutura e qualidade
-- Unix Fan
 
 Ementa
 ------
@@ -41,14 +35,13 @@ Ementa
 Modelo do Curso
 ---------------
 
- - Mão na massa de um passo-a-passo para construir um manual online de GIT utilizando
-     mkdocs (http://www.mkdocs.org/).
 
+ - Mão na massa de um passo-a-passo para construir um manual de
+ git
+ - Ninguém consegue decorar tudo, uma wiki é um ótimo recurso pra
+ acessar informações "conhecidas"
  - Não nos determos em ferramentas gráficas
  - Perguntem, e o que eu não conseguir responder no módulo 2 matamos
- - Ninguém consegue decorar tudo, uma wiki é um ótimo recurso pra
-     ajudar a "saber".
-
 
 Mão na massa!
 =============
