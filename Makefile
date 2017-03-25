@@ -9,12 +9,13 @@ serve:
 	mkdocs serve --dev-addr=0.0.0.0:8081 &
 	sleep 10 && ${BROWSER} http://localhost:8081 &
 deploy_server: build
-	cd /home/jean/projects/git-docs
+	cd /home/jean/projects/git-course
 	rsync -a site/ root@$(BLOG_IP):/var/www/html/git/
 deploy_githubio: build
 	cp -rf site/* githubio/
 	cd githubio ; git add . ; git commit -m "improvements"
 	git push
+deploy_all: deploy_server deploy_githubio
 clear:
 	rm -rf site/*
 	rm -rf presentation.pdf

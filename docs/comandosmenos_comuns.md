@@ -173,3 +173,10 @@ git log origin/master..master --stat
  git rev-list --all --not 7ef306ff3ef3cfe694fbf3847f2c35c86067ee87^@ --children | grep "^7ef306ff3ef3cfe694fbf3847f2c35c86067ee87"
 
 ```
+
+### Saber a árvore de conflitos de um merge
+
+```sh
+git merge-tree `git merge-base $BRANCH HEAD` HEAD $BRANCH
+
+```
