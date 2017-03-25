@@ -1,6 +1,7 @@
 Recuperando
 -----------
 
+
 ### Recuperando na área de trabalho
 
 ```
@@ -29,6 +30,11 @@ git log -SX
 
 ```
 
+### Encontrar string no repositório
+
+```sh
+git grep -i [--untracked ] linus
+```
 
 
 Desfazendo
