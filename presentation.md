@@ -25,18 +25,18 @@ Sobre
 Ementa
 ------
 
-- Pra que serve
+- Home
+- Introdução
 - Inicializando um projeto
 - Criando Histórico
+- Boas Práticas de commits
 - Branches
 - Merges
 - Patches
-- Recuperando
-- Desfazendo
+- Recuperando e desfazendo
 - Remotos
-- Github & Gitlab
-- Boas Práticas
 - Fluxos de trabalho
+- Github e Gitlab
 
 Modelo do Curso
 ---------------

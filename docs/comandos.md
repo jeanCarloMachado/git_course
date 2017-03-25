@@ -4,173 +4,157 @@ Lista de Comandos
 Git conta com vários comandos, a lista completa se encontra em
 /lib/git-core.
 
-- git
-- add
-- add--interactive
-- am
-- annotate
-- apply
-- archimport
-- archive
-- bisect
-- bisect--helper
-- blame
-- branch
-- bundle
-- cat-file
-- check-attr
-- check-ignore
-- check-mailmap
-- checkout
-- checkout-index
-- check-ref-format
-- cherry
-- cherry-pick
-- citool
-- clean
-- clone
-- column
-- commit
-- commit-tree
-- config
-- count-objects
-- credential
-- credential-cache
-- credential-cache--daemon
-- credential-gnome-keyring
-- credential-libsecret
-- credential-store
-- cvsexportcommit
-- cvsimport
-- cvsserver
-- daemon
-- describe
-- diff
-- diff-files
-- diff-index
-- difftool
-- difftool--helper
-- diff-tree
-- draw
-- fast-export
-- fast-import
-- fetch
-- fetch-pack
-- filter-branch
-- fmt-merge-msg
-- for-each-ref
-- format-patch
-- fsck
-- fsck-objects
-- gc
-- get-tar-commit-id
-- grep
-- gui
-- gui--askpass
-- hash-object
-- help
-- http-backend
-- http-fetch
-- http-push
-- imap-send
-- index-pack
-- init
-- init-db
-- instaweb
-- interpret-trailers
-- log
-- ls-files
-- ls-remote
-- ls-tree
-- mailinfo
-- mailsplit
-- merge
-- merge-base
-- merge-file
-- merge-index
-- merge-octopus
-- merge-one-file
-- merge-ours
-- merge-recursive
-- merge-resolve
-- merge-subtree
-- mergetool
-- mergetool--lib
-- merge-tree
-- mktag
-- mktree
-- mv
-- name-rev
-- notes
-- p4
-- pack-objects
-- pack-redundant
-- pack-refs
-- parse-remote
-- patch-id
-- prune
-- prune-packed
-- pull
-- push
-- quiltimport
-- read-tree
-- rebase
-- rebase--am
-- rebase--interactive
-- rebase--merge
-- receive-pack
-- reflog
-- remote
-- remote-ext
-- remote-fd
-- remote-ftp
-- remote-ftps
-- remote-http
-- remote-https
-- remote-testsvn
-- repack
-- replace
-- request-pull
-- rerere
-- reset
-- revert
-- rev-list
-- rev-parse
-- rm
-- send-email
-- send-pack
-- shell
-- sh-i18n
-- sh-i18n--envsubst
-- shortlog
-- show
-- show-branch
-- show-index
-- show-ref
-- sh-setup
-- stage
-- stash
-- status
-- stripspace
-- submodule
-- submodule--helper
-- subtree
-- svn
-- symbolic-ref
-- tag
-- unpack-file
-- unpack-objects
-- update-index
-- update-ref
-- update-server-info
-- upload-archive
-- upload-pack
-- var
-- verify-commit
-- verify-pack
-- verify-tag
-- web--browse
-- whatchanged
-- worktree
-- write-tree
-- mergetools
+- Git (3pm)            - Perl interface to the Git version control system
+- git (1)              - the stupid content tracker
+- git-add (1)          - Add file contents to the index
+- git-am (1)           - Apply a series of patches from a mailbox
+- git-annotate (1)     - Annotate file lines with commit information
+- git-apply (1)        - Apply a patch to files and/or to the index
+- git-archimport (1)   - Import an Arch repository into Git
+- git-archive (1)      - Create an archive of files from a named tree
+- git-bisect (1)       - Use binary search to find the commit that introduced a bug
+- git-blame (1)        - Show what revision and author last modified each line of a file
+- git-branch (1)       - List, create, or delete branches
+- git-bundle (1)       - Move objects and refs by archive
+- git-cat-file (1)     - Provide content or type and size information for repository objects
+- git-check-attr (1)   - Display gitattributes information
+- git-check-ignore (1) - Debug gitignore / exclude files
+- git-check-mailmap (1) - Show canonical names and email addresses of contacts
+- git-checkout (1)     - Switch branches or restore working tree files
+- git-checkout-index (1) - Copy files from the index to the working tree
+- git-check-ref-format (1) - Ensures that a reference name is well formed
+- git-cherry (1)       - Find commits yet to be applied to upstream
+- git-cherry-pick (1)  - Apply the changes introduced by some existing commits
+- git-citool (1)       - Graphical alternative to git-commit
+- git-clean (1)        - Remove untracked files from the working tree
+- git-clone (1)        - Clone a repository into a new directory
+- git-column (1)       - Display data in columns
+- git-commit (1)       - Record changes to the repository
+- git-commit-tree (1)  - Create a new commit object
+- git-config (1)       - Get and set repository or global options
+- git-count-objects (1) - Count unpacked number of objects and their disk consumption
+- git-credential (1)   - Retrieve and store user credentials
+- git-credential-cache (1) - Helper to temporarily store passwords in memory
+- git-credential-cache--daemon (1) - Temporarily store user credentials in memory
+- git-credential-store (1) - Helper to store credentials on disk
+- git-cvsexportcommit (1) - Export a single commit to a CVS checkout
+- git-cvsimport (1)    - Salvage your data out of another SCM people love to hate
+- git-cvsserver (1)    - A CVS server emulator for Git
+- git-daemon (1)       - A really simple server for Git repositories
+- git-describe (1)     - Describe a commit using the most recent tag reachable from it
+- git-diff (1)         - Show changes between commits, commit and working tree, etc
+- git-diff-files (1)   - Compares files in the working tree and the index
+- git-diff-index (1)   - Compare a tree to the working tree or index
+- git-difftool (1)     - Show changes using common diff tools
+- git-diff-tree (1)    - Compares the content and mode of blobs found via two tree objects
+- git-fast-export (1)  - Git data exporter
+- git-fast-import (1)  - Backend for fast Git data importers
+- git-fetch (1)        - Download objects and refs from another repository
+- git-fetch-pack (1)   - Receive missing objects from another repository
+- git-filter-branch (1) - Rewrite branches
+- git-fmt-merge-msg (1) - Produce a merge commit message
+- git-for-each-ref (1) - Output information on each ref
+- git-format-patch (1) - Prepare patches for e-mail submission
+- git-fsck (1)         - Verifies the connectivity and validity of the objects in the database
+- git-fsck-objects (1) - Verifies the connectivity and validity of the objects in the database
+- git-gc (1)           - Cleanup unnecessary files and optimize the local repository
+- git-get-tar-commit-id (1) - Extract commit ID from an archive created using git-archive
+- git-grep (1)         - Print lines matching a pattern
+- git-gui (1)          - A portable graphical interface to Git
+- git-hash-object (1)  - Compute object ID and optionally creates a blob from a file
+- git-help (1)         - Display help information about Git
+- git-http-backend (1) - Server side implementation of Git over HTTP
+- git-http-fetch (1)   - Download from a remote Git repository via HTTP
+- git-http-push (1)    - Push objects over HTTP/DAV to another repository
+- git-imap-send (1)    - Send a collection of patches from stdin to an IMAP folder
+- git-index-pack (1)   - Build pack index file for an existing packed archive
+- git-init (1)         - Create an empty Git repository or reinitialize an existing one
+- git-init-db (1)      - Creates an empty Git repository
+- git-instaweb (1)     - Instantly browse your working repository in gitweb
+- git-interpret-trailers (1) - help add structured information into commit messages
+- git-log (1)          - Show commit logs
+- git-ls-files (1)     - Show information about files in the index and the working tree
+- git-ls-remote (1)    - List references in a remote repository
+- git-ls-tree (1)      - List the contents of a tree object
+- git-mailinfo (1)     - Extracts patch and authorship from a single e-mail message
+- git-mailsplit (1)    - Simple UNIX mbox splitter program
+- git-merge (1)        - Join two or more development histories together
+- git-merge-base (1)   - Find as good common ancestors as possible for a merge
+- git-merge-file (1)   - Run a three-way file merge
+- git-merge-index (1)  - Run a merge for files needing merging
+- git-merge-one-file (1) - The standard helper program to use with git-merge-index
+- git-mergetool (1)    - Run merge conflict resolution tools to resolve merge conflicts
+- git-mergetool--lib (1) - Common Git merge tool shell scriptlets
+- git-merge-tree (1)   - Show three-way merge without touching index
+- git-mktag (1)        - Creates a tag object
+- git-mktree (1)       - Build a tree-object from ls-tree formatted text
+- git-mv (1)           - Move or rename a file, a directory, or a symlink
+- git-name-rev (1)     - Find symbolic names for given revs
+- git-notes (1)        - Add or inspect object notes
+- git-p4 (1)           - Import from and submit to Perforce repositories
+- git-pack-objects (1) - Create a packed archive of objects
+- git-pack-redundant (1) - Find redundant pack files
+- git-pack-refs (1)    - Pack heads and tags for efficient repository access
+- git-parse-remote (1) - Routines to help parsing remote repository access parameters
+- git-patch-id (1)     - Compute unique ID for a patch
+- git-prune (1)        - Prune all unreachable objects from the object database
+- git-prune-packed (1) - Remove extra objects that are already in pack files
+- git-pull (1)         - Fetch from and integrate with another repository or a local branch
+- git-push (1)         - Update remote refs along with associated objects
+- git-quiltimport (1)  - Applies a quilt patchset onto the current branch
+- git-read-tree (1)    - Reads tree information into the index
+- git-rebase (1)       - Reapply commits on top of another base tip
+- git-receive-pack (1) - Receive what is pushed into the repository
+- git-reflog (1)       - Manage reflog information
+- git-remote (1)       - Manage set of tracked repositories
+- git-remote-ext (1)   - Bridge smart transport to external command.
+- git-remote-fd (1)    - Reflect smart transport stream back to caller
+- git-repack (1)       - Pack unpacked objects in a repository
+- git-replace (1)      - Create, list, delete refs to replace objects
+- git-request-pull (1) - Generates a summary of pending changes
+- git-rerere (1)       - Reuse recorded resolution of conflicted merges
+- git-reset (1)        - Reset current HEAD to the specified state
+- git-revert (1)       - Revert some existing commits
+- git-rev-list (1)     - Lists commit objects in reverse chronological order
+- git-rev-parse (1)    - Pick out and massage parameters
+- git-rm (1)           - Remove files from the working tree and from the index
+- git-send-email (1)   - Send a collection of patches as emails
+- git-send-pack (1)    - Push objects over Git protocol to another repository
+- git-shell (1)        - Restricted login shell for Git-only SSH access
+- git-sh-i18n (1)      - Git's i18n setup code for shell scripts
+- git-sh-i18n--envsubst (1) - Git's own envsubst(1) for i18n fallbacks
+- git-shortlog (1)     - Summarize 'git log' output
+- git-show (1)         - Show various types of objects
+- git-show-branch (1)  - Show branches and their commits
+- git-show-index (1)   - Show packed archive index
+- git-show-ref (1)     - List references in a local repository
+- git-sh-setup (1)     - Common Git shell script setup code
+- git-stage (1)        - Add file contents to the staging area
+- git-stash (1)        - Stash the changes in a dirty working directory away
+- git-status (1)       - Show the working tree status
+- git-stripspace (1)   - Remove unnecessary whitespace
+- git-submodule (1)    - Initialize, update or inspect submodules
+- git-subtree (1)      - Merge subtrees together and split repository into subtrees
+- git-svn (1)          - Bidirectional operation between a Subversion repository and Git
+- git-symbolic-ref (1) - Read, modify and delete symbolic refs
+- git-tag (1)          - Create, list, delete or verify a tag object signed with GPG
+- git-unpack-file (1)  - Creates a temporary file with a blob's contents
+- git-unpack-objects (1) - Unpack objects from a packed archive
+- git-update-index (1) - Register file contents in the working tree to the index
+- git-update-ref (1)   - Update the object name stored in a ref safely
+- git-update-server-info (1) - Update auxiliary info file to help dumb servers
+- git-upload-archive (1) - Send archive back to git-archive
+- git-upload-pack (1)  - Send objects packed back to git-fetch-pack
+- git-var (1)          - Show a Git logical variable
+- git-verify-commit (1) - Check the GPG signature of commits
+- git-verify-pack (1)  - Validate packed Git archive files
+- git-verify-tag (1)   - Check the GPG signature of tags
+- git-web--browse (1)  - Git helper script to launch a web browser
+- git-whatchanged (1)  - Show logs with difference each commit introduces
+- git-worktree (1)     - Manage multiple working trees
+- git-write-tree (1)   - Create a tree object from the current index
+- BC (3x)              - direct curses interface to the terminfo capability database
+- bc (1)               - An arbitrary precision calculator language
+- bc (1p)              - arbitrary-precision arithmetic language
+- gvimdiff (1)         - edit two, three or four versions of a file with Vim and show differences
+- vimdiff (1)          - edit two, three or four versions of a file with Vim and show differences
