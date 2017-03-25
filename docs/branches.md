@@ -50,8 +50,12 @@ git checkout nova_branch
 ### Usando branches
 
 ```sh
-git commit "informações sobre branches no master"
+#da master
 git checkout -b "recursos_adicionais" #cria outra linha de trabalho
+#adicionados recursos adicionais
+git commit "recursos adicionais x,y,z"
+git checkout -b "recursos_adicionais_extras" 
+#mais recursos adicionais
 
 ```
 

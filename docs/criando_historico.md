@@ -1,3 +1,15 @@
+Status
+------
+
+Git status dá informações de como está seu repositório. Muito útil
+ara saber qual a próxima coisa a se fazer.
+
+```sh
+git status
+git status -s
+
+```
+
 Add
 ---
 
@@ -55,10 +67,28 @@ gitk nome_do_arquivo
 Removendo arquivos
 ------------------
 
+```sh
 git rm --cached foo.txt//staging
 git rm foo.txt
 
+```
 
+Gitignore
+----------
+
+```sh
+site/*
+*.pd
+*.doc
+presentation.pdf
+.DS_Store
+*.un~
+*.disabled
+Backend/data/tmp*
+*.eml
+Backend/config/autoload/*local.php
+
+```
 Renomeando arquivos
 -------------------
 

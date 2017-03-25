@@ -13,6 +13,7 @@ Exercícios
 <!--}}} -->
 
 ### Branches
+<!-- {{{ -->
 
 - Crie uma branch de nova feature a partir da master
 - Faça algumas modificações nesta nova branch com o conteúdo que você aprendeu
@@ -21,22 +22,39 @@ Exercícios
 - Volte a trabalhar na branch de nova feature
 - Tragas as modificações para a master, via merge
 
-### Patches
+<!-- }}} -->
 
+### Patches
+<!-- {{{ -->
 - Altere o conteúdo do seu projeto em uma nova branch, commite e
 conteúdo e gere um patch da branch.
 - Em outra branch aplique as modificações.
+<!-- }}} -->
 
-### Recuperando dados
+### Recuperando e desfazendo
 
-Introduza um commit errado no seu projeto, que delete algum
-arquivo importante.
+1.0
+<!-- {{{ -->
+- Introduza um commit errado no seu projeto que delete algum
+arquivo importante na sua master.
+- Utilize do revert para desfazer as modificações
+<!-- }}} -->
+
+2.0
+<!-- {{{ -->
+- Faça modificações em vários arquivos
+- Faça um commit com todas as modificações
+- Desfaça volte no histórico e reescreva com commits mais
+- semânticos
+<!-- }}} -->
+
 
 ### Remoto
-
+<!-- {{{ -->
 - Crie uma conta no Github ou Gitlab
 - Crie um repositório para o projeto do git
 - Envie as modificações para lá via https
 - Configure suas chaves ssh
 - Envie novas modificações via ssh
 
+<!-- }}} -->
