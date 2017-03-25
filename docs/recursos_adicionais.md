@@ -6,6 +6,9 @@ Links
  - [Melhor tutorial de Git](http://rypress.com/tutorials/git/index)
  - [Encontrando issues no gitub](http://www.jeancarlomachado.com.br/blog/findingissuesongithub.html)
  - [Git para cientistas da computação](http://eagain.net/articles/git-for-computer-scientists/)
+ - [Novidades do gitlab](https://about.gitlab.com/2017/03/22/gitlab-9-0-released/)
+ - [Markdown ref 1](https://guides.github.com/features/mastering-markdown/)
+ - [Markdown ref 2](http://www.markdowntutorial.com)
 
 Livros
 ------

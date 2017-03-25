@@ -25,18 +25,18 @@ Sobre
 Ementa
 ------
 
-- História do GIT
+- Pra que serve
 - Inicializando um projeto
-- Criando histórico
-- Navegando no Histórico
+- Criando Histórico
 - Branches
+- Merges
+- Patches
+- Recuperando
 - Desfazendo
-- Reescrevendo o histórico
-- Git remoto
-- Github
-- Ferramentas auxiliares
-- Estratégias de versionamento
-- Produtividade & Utilitários
+- Remotos
+- Github & Gitlab
+- Boas Práticas
+- Fluxos de trabalho
 
 Modelo do Curso
 ---------------
@@ -45,9 +45,9 @@ Modelo do Curso
      mkdocs (http://www.mkdocs.org/).
 
  - Não nos determos em ferramentas gráficas
- - Perguntem, e o que eu não conseguir responde no módulo 2 matamos
+ - Perguntem, e o que eu não conseguir responder no módulo 2 matamos
  - Ninguém consegue decorar tudo, uma wiki é um ótimo recurso pra
-     ajudr a "saber".
+     ajudar a "saber".
 
 
 Mão na massa!

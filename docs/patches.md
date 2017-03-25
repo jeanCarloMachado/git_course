@@ -1,8 +1,8 @@
 Format patch
 ------------
 
-Patches são mudanças que podem ser transferidas de um repositório
-para outro:
+Patches são mudanças em um formato padronizado que podem ser
+transferidas de um lugar para outro:
 
 Para criar um patch do último commit:
 
@@ -14,7 +14,7 @@ git format-patch master
 Appy
 ----
 
-Para aplicar um patch:
+Para aplicar um patch
 
 ```
 curl -L https://goo.gl/p1LEc7 -o 0001-historia.patch
@@ -35,7 +35,6 @@ git log -p
 
 ```
 
-
 Criar um patch de uma branch
 ----------------------------
 
@@ -43,16 +42,4 @@ Criar um patch de uma branch
 git format-patch master
 
 ```
-
-Exercícios
-----------
-
-```sh
-Altere o conteúdo do seu projeto em uma nova branch, commite e
-conteúdo e gere um patch da branch.
-
-Em outra branch aplique as modificações.
-
-```
-
 

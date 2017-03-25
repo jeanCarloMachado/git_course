@@ -10,7 +10,6 @@ git config user.name "other user"
 git config user.email other.user@gmail.com
 git ls-remote
 
-
 //do some work
 cd ../git-docs
 git remote add other ../other-git-docs
@@ -131,17 +130,4 @@ Credenciais https
 
 ```sh
 git config --global credential.helper 'cache --timeout=3600'
-
-```
-
-
-Exercícios
-----------
-
-```sh
-Crie uma conta no github
-Crie um repositório para o projeto do git
-Envie as modificações para lá via http
-Configure suas chaves ssh
-Envie novas modificações via ssh
 ```

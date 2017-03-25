@@ -32,6 +32,13 @@ git commit -a
 Consultando o histórico
 -----------------------
 
+### Git log
+
+```sh
+git log
+
+```
+
 ### Gitk
 
 ```sh
@@ -44,38 +51,6 @@ ou
 gitk nome_do_arquivo
 
 ```
-
-### Git log
-
-```sh
-git log
-
-```
-
-
-Exercício
----------
-
-```
-Crie um projeto usando o mkdocs
-Crie um arquivo resumindo como inicilizar um projeto git
-Comite esse arquivo
-Crie um arquivo resumindo como utilizar o commit
-Comite esse arquivo
-Consulte a versão anterior com o gitk
-```
-
-### Setup mkdocs
-
-
-```
-$ pip install mkdocs
-$ mkdocs new git-docs
-$ cd git-docs
-$ mkdocs serve
-$ browser http://localhost:8000
-```
-
 
 Removendo arquivos
 ------------------

@@ -3,10 +3,9 @@ theme: mkdocs
 pages:
 - Git:
     - Home: 'index.md'
-    - História: 'historia.md'
-    - Comandos: 'comandos.md'
+    - Introdução: 'introducao.md'
+    - Lista de comandos: 'comandos.md'
 - Básico:
-    - Pra que serve: 'pra-que-serve.md'
     - Inicializando um projeto: 'inicializando-projeto.md'
     - Criando Histórico: 'criando_historico.md'
     - Branches: 'branches.md'

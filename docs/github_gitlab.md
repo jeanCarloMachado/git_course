@@ -24,4 +24,6 @@ Tipo pastebin
 Gitlab
 ------
 
-Permite fazer as mesmas coisas que o github 
+Permite fazer as mesmas coisas que o github
+Merge request / Pull request
+
