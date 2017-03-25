@@ -9,7 +9,7 @@ GitHub é uma rede social.
 - Criar repositórios
 - Colaborar para repositórios existentes:
     - Criando issues
-    - Submitando pull requests
+    - Enviar código
 
 ### Outros Serviços
 

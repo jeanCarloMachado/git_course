@@ -8,14 +8,14 @@ pages:
 - Básico:
     - Inicializando um projeto: 'inicializando-projeto.md'
     - Criando Histórico: 'criando_historico.md'
+    - Boas Práticas de commits: 'boas_praticas.md'
     - Branches: 'branches.md'
     - Merges: 'merges.md'
     - Patches: 'patches.md'
     - Recuperando e desfazendo: 'recuperando_desfazendo.md'
     - Remotos: 'remotos.md'
-    - Github e Gitlab: 'github_gitlab.md'
-    - Boas Práticas: 'boas_praticas.md'
     - Fluxos de trabalho: 'fluxos_de_trabalho.md'
+    - Github e Gitlab: 'github_gitlab.md'
 - Avançado:
     - Customizando:  'customizando.md'
     - Ferramentas Auxiliares: 'ferramentas-auxiliares-e-produtividade.md'

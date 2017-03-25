@@ -33,14 +33,14 @@ conteúdo e gere um patch da branch.
 
 ### Recuperando e desfazendo
 
-1.0
+#### 1.0
 <!-- {{{ -->
 - Introduza um commit errado no seu projeto que delete algum
 arquivo importante na sua master.
 - Utilize do revert para desfazer as modificações
 <!-- }}} -->
 
-2.0
+#### 2.0
 <!-- {{{ -->
 - Faça modificações em vários arquivos
 - Faça um commit com todas as modificações
@@ -50,11 +50,34 @@ arquivo importante na sua master.
 
 
 ### Remoto
+
+#### 1.0
 <!-- {{{ -->
 - Crie uma conta no Github ou Gitlab
 - Crie um repositório para o projeto do git
 - Envie as modificações para lá via https
 - Configure suas chaves ssh
 - Envie novas modificações via ssh
+
+<!-- }}} -->
+
+#### 1.0
+<!-- {{{ -->
+- Envie pull/requests para a branch de um de seus colegas com
+melhorarias.
+<!-- }}} -->
+
+#### Tema de casa
+
+<!-- {{{ -->
+
+```sh
+Centralizem os trabalhos em um único repositório que vai servir
+como referência da empresa pra git.
+Bonus: Utilizar o mkdocs ou ferramenta similar para gerar html
+Bonus: Publicar online (possivelmente em algum serviço como o
+githubio)
+
+```
 
 <!-- }}} -->
