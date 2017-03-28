@@ -34,6 +34,12 @@ Mais adequado para entrega contínua
  - entrega-se a nova versão
 
 
+Gitlab Flow
+-----------
+
+[https://about.gitlab.com/2014/09/29/gitlab-flow/](https://about.gitlab.com/2014/09/29/gitlab-flow/)
+
+
 Estudando fluxos de projetos open-source
 ----------------------------------------
 
@@ -65,4 +71,5 @@ Mais sobre o assunto
  - https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows
  - https://lucamezzalira.com/2014/03/10/git-flow-vs-github-flow/
  - http://scottchacon.com/2011/08/31/github-flow.html
+ - https://lucamezzalira.com/2014/03/10/git-flow-vs-github-flow/
 

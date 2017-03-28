@@ -57,7 +57,9 @@ git log
 gitk
 
 ```
-ou
+
+### Setup mkdocs
+
 
 ```sh
 gitk nome_do_arquivo
