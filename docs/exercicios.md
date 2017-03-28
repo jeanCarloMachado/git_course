@@ -1,15 +1,16 @@
 Exercícios
 ----------
 
+
 ### Básico
 <!--{{{-->
-- Crie um novo diretório para o projeto 
+- Crie um novo diretório para o projeto
 - Crie um arquivo resumindo como inicializar um projeto git, preferencialmente no formato Markdown
 - Comite esse arquivo
 - Crie um arquivo resumindo como utilizar o commit
 - Comite esse arquivo
-- Consulte a versão anterior com o gitk
-
+- Consulte a versão anterior com o git log ou gitk
+https://guides.github.com/features/mastering-markdown
 <!--}}} -->
 
 ### Branches

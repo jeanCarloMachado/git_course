@@ -1,6 +1,6 @@
 
 Fast-forward
-------------
+============
 
 Acontece quando o histórico do merge está a frente do HEAD atual,
 então move-se apenas o ponteiro da branch.
@@ -34,8 +34,8 @@ Muda o ponteiro do commit.
 [ c0 ] -> [ c1 ] -> [ c2 ] -> [ c3 ]
 [ c3 ] -> [ c4 ] -> [ c5 ] -> [ c6 ]
 [ master ] -> [ c6 ]
+[ hotfix ] -> [ c2 ]
 [ new_feature ] -> [ c6 ]
-
 -->
 
 ```sh

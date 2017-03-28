@@ -66,6 +66,7 @@ Merge mescla o conteúdo de branches
 ```sh
 git merge recursos_adicionais
 git log
+git log [branch_name]
 
 ```
 

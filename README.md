@@ -32,5 +32,9 @@ Adicionar exercícios
 
  - Boas práticas de nomenclatura de branch e commit
  - Colocar representações visuais das branches
+ - Adicionar exemplo de merge da master em uma branch
+ - É possível mostrar um gráfico no git log completo
+ - Adicionar gitlabflow
+ - adicionar imagens dos fluxos de desenvolvimento
 
 A copy can be found on https://jeancarlomachado.github.io/.
