@@ -53,14 +53,6 @@ git bundle unbundle ../repo.bundle master
 ```
 Mantém o histórico.
 
-Merge de múltiplas branches
----------------------------
-
-octopus merge
-
-ours
-http://stackoverflow.com/questions/16208144/how-do-i-merge-multiple-branches-into-master
-
 Staging parcial
 ---------------
 

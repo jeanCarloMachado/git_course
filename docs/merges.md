@@ -126,3 +126,20 @@ mesmo lugar adiciona-se a modificação
 lugar marca-se a área como conflitante e pede-se para o usuário
 corrigir.
 
+Resolvendo Conflitos
+--------------------
+
+### Resolvendo com nossas alterações
+
+
+```sh
+git merge master -X ours
+
+```
+
+### Resolvendo com as alterações da outra branch
+
+```sh
+git merge master -X ours
+
+```

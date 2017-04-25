@@ -1,17 +1,92 @@
 Rebase
 ------
 
-Coloca o histórico da branch atual no topo da branch `target`.
+
+<!--
+
+[ c3 ] -> [ c2 ] -> [ c1 ] -> [ c0 ]
+[ master ] -> [ c3 ]
+[ c4 ] -> [ c2 ]
+[ experiment ] -> [ c4 ]
+
+
+-->
+
+```sh
+
++------------+     +----+     +----+     +----+     +----+
+| experiment | --> | c4 | --> | c2 | --> | c1 | --> | c0 |
++------------+     +----+     +----+     +----+     +----+
+                                ^
+                                |
+                                |
++------------+     +----+       |
+|   master   | --> | c3 | ------+
++------------+     +----+
 
 ```
-git rebase target
+
+Coloca o histórico da branch atual(experiment)  no topo do estado
+atual da master.
+
+```sh
+git checkout experiment
+git rebase master
 
 ```
 
-A regra de ouro do rebase
--------------------------
+<!--
+[ c3 ] -> [ c2 ] -> [ c1 ] -> [ c0 ]
+[ master ] -> [ c3 ]
+[ c4 ] -> [ c3 ]
+[ experiment ] -> [ c4 ]
 
-https://www.atlassian.com/git/tutorials/merging-vs-rebasing?section=the-golden-rule-of-rebasing
+
+-->
+
+```sh
++------------+     +----+     +--------+     +----+     +----+     +----+
+| experiment | --> | c4 | --> |   c3   | --> | c2 | --> | c1 | --> | c0 |
++------------+     +----+     +--------+     +----+     +----+     +----+
+                                ^
+                                |
+                                |
+                              +--------+
+                              | master |
+                              +--------+
+```
+
+Transfere pra master as mudanças feitas em exeriment
+```sh
+git checkout master
+git merge experiment
+
+```
+
+<!--
+[ c3 ] -> [ c2 ] -> [ c1 ] -> [ c0 ]
+[ c4 ] -> [ c3 ]
+[ master ] -> [ c4 ]
+[ experiment ] -> [ c4 ]
+
+
+
+-->
+
+```sh
++------------+     +--------+     +----+     +----+     +----+     +----+
+| experiment | --> |   c4   | --> | c3 | --> | c2 | --> | c1 | --> | c0 |
++------------+     +--------+     +----+     +----+     +----+     +----+
+                     ^
+                     |
+                     |
+                   +--------+
+                   | master |
+                   +--------+
+```
+
+
+**Dica**: Rebase reescreve histórico, então nunca faça rebase em histórico compartilhado.
 
 Squash
 ------
