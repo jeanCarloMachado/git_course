@@ -1,5 +1,2 @@
-[submodule "githubio"]
-	path = githubio
-	url = git@github.com:jeanCarloMachado/jeancarlomachado.github.io.git
 [submodule]
 	githubiobranch = master
