@@ -1,39 +1,33 @@
-Recuperando
+Procurando
 -----------
 
 
-### Recuperando na área de trabalho
 
-```
-git log
-rm -rf docs
-browser http://localhost:8000
-git reset --hard HEAD
-browser http://localhost:8000
+### Quando string foi introduzida
 
-```
-
-### Recuperando versão X do histórico
-
-```sh
-git checkout commit X
-git checkout -b "nova_branch"
-git checkout master
-git merge nova_branch
-
-```
-
-### Encontrar commits com string X
+Encontrar commits com string X
 
 ```sh
 git log -SX
 
 ```
 
-### Encontrar string no repositório
+Onde a string foi introduzida
+-----------------------------
+
+Encontrar string no repositório
+
+n: line number
 
 ```sh
-git grep -i [--untracked ] linus
+git grep [-i] [-n] [--count] [--untracked ] linus
 ```
 
 
+Procurar por modifcações em bloco de texto
+------------------------------------------
+
+```sh
+git log -L '/deleteUserFromClient/',/\ \ \ \}/:\
+Backend/module/Application/src/Application/Service/Client/Client.php
+```

@@ -6,7 +6,7 @@ Stash
 
 Para salvar trabalhos temporários
 
-```
+```sh
 git stash
 git stash apply
 
@@ -14,7 +14,7 @@ git stash apply
 
 ### Visualizar o stash
 
-```
+```sh
 git stash show -p
 
 ```
@@ -22,13 +22,7 @@ git stash show -p
 Gitk
 ----
 
-Uma interface nativa para quem gosta de interfaces gráficas
-
-Git on GUI
-----------
-
-[Source tree](https://www.sourcetreeapp.com/)
-
+Bom para verificar o histórico de um único arquivo rapidamente.
 
 ### Tags
 

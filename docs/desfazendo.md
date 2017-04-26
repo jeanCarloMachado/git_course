@@ -1,6 +1,27 @@
 Desfazendo
 ----------
 
+### Recuperando na área de trabalho
+
+```
+git log
+rm -rf docs
+browser http://localhost:8000
+git reset --hard HEAD
+browser http://localhost:8000
+
+```
+
+### Recuperando versão X do histórico
+
+```sh
+git checkout commit X
+git checkout -b "nova_branch"
+git checkout master
+git merge nova_branch
+
+```
+
 ### Remover do staging o que ainda não está comitado
 
 ```sh
@@ -42,8 +63,9 @@ git commit --amend
 
 O *ammend* leva em consideração a área de *staging*.
 
-```
+```sh
 git add file_x.md
+git rm file_y.md
 git commit --amend
 
 ```
@@ -53,7 +75,7 @@ git commit --amend
 Desfaz um commit criando um novo commit. Recomendado em branches
 públicas onde o histórico não pode ser reescrito.
 
-```
+```sh
 git checkout hotfix
 git revert HEAD~2
 
@@ -61,7 +83,7 @@ git revert HEAD~2
 
 ### Desfazendo últimos 3 commits - sem desfazer o código
 
-```
+```sh
 git reset --soft HEAD~3
 
 ```
