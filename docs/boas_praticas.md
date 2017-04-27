@@ -50,6 +50,15 @@ Further paragraphs come after blank lines.
 
 ```
 
+Trocar template de mensagem de commit
+-------------------------------------
+
+```
+git config --global commit.template /home/jean/.commit_template
+
+```
+
+
 Checagem de espaços em branco antes de comitar
 ----------------------------------------------
 
