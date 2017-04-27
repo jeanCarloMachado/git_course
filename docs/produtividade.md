@@ -24,34 +24,6 @@ Gitk
 
 Bom para verificar o histórico de um único arquivo rapidamente.
 
-### Tags
-
-
-Tags anotadas guardam o commit, quem comitou e uma descrição
-```sh
-git tag -l "v1.*"
-git tag -a v1.1  -m "informações adicionais" [commitId]
-git show v1.1
-
-```
-
-Uma tag leve não guarda informações adicionais a não ser o commit
-
-
-```sh
-git tag -l "v1.*"
-git tag  v1.2 [commitId]
-git show v1.2
-```
-
-
-### Enviando pro server
-
-```sh
-git push origin v1.2
-git push origin --tags
-
-```
 
 Customizando
 ------------
@@ -212,4 +184,21 @@ git config --global alias.mylog "log --pretty=format:'%h %s [%an]' --graph"
 #### Opções
 
 --decorate  mostra as braches apontando para determinados commits
+
+Blame
+-----
+
+Mostra as últimas alterações de cada linha de arquivo com o autor.
+
+```
+$ git blame -L 141,153 simplegit.rb
+
+```
+Git não guarda renames explicitamente. Quando passado o -C git
+tenta identificar de onde o código veio.
+
+```
+$ git blame -C  GITPackUpload.m
+
+```
 
