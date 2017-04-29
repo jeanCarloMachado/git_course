@@ -1,3 +1,22 @@
+### Trocar a última mensagem de commit
+
+```
+git commit --amend
+
+```
+
+### Adicionando/removendo um arquivo ao commit anterior
+
+O *ammend* leva em consideração a área de *staging*.
+
+```sh
+git add file_x.md
+git rm file_y.md
+git commit --amend
+
+```
+
+
 Rebase
 ------
 
@@ -88,51 +107,33 @@ git merge experiment
 
 **Dica**: Rebase reescreve histórico, então nunca faça rebase em histórico compartilhado.
 
-Squash
-------
+Rebase iterativo
+----------------
 
-```
-git rebase -i
-
-```
-Ou
-
-```
-git merge --squash feature_branch
-
-```
-
-Editar um commit anterior
--------------------------
-
-- Rebase no commit e marcar ele como editado
-- Comitar as alterações
-- Fazer um fix up no commit com seu pai
-
+Permite realizar várias operações (bem diferente do rebase
+normal).
 
 ```
 git rebase -i HEAD~3
 
 ```
 
-Criando dois commits a partir de 1
-----------------------------------
+**Para editar os últimos 3 commits use: HEAD~3.**
+**A lista do rebase vem em ordem reversa ao log, com os mais
+antigos no topo.**
 
-```
-rebase iterativo com edit
-git reset HEAD^
-... add commit 2x
-rebase --continue
-```
+### Squash
 
+Permite juntar um commit ao seu ancestral formando apenas 1.
 
-Removendo arquivos do último commit
------------------------------------
+### Drop
 
-```
-git rm file_name
+Permite deletar um commit e seu conteúdo
 
-```
+### Edit
+
+Para o processo logo após o commit em questão, possibilitando usar
+o ammend para editá-lo.
 
 Removendo arquivos do histórico
 -------------------------------
@@ -146,6 +147,16 @@ git filter-branch --tree-filter 'rm -rf passwords.txt' HEAD.
  git filter-branch --force --index-filter \
 'git rm --cached --ignore-unmatch PATH-TO-YOUR-FILE-WITH-SENSITIVE-DATA' \
 --prune-empty --tag-name-filter cat -- --all
+
+```
+
+Cherry-Pick
+-----------
+
+Permite aplicar um único commit de outra branch.
+
+```
+git cherry-pick
 
 ```
 

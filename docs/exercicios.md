@@ -1,8 +1,9 @@
 Exercícios
-----------
+==========
 
 
-### Básico
+### Básico 
+<!--{{{-->
 <!--{{{-->
 - Crie um novo diretório para o projeto
 - Crie um arquivo resumindo como inicializar um projeto git, preferencialmente no formato Markdown
@@ -82,3 +83,16 @@ githubio)
 ```
 
 <!-- }}} -->
+
+<!--}}}-->
+
+Avançado
+--------
+
+### Reescrevendo o histórico
+
+No repositório dado:
+
+- Junte o segundo e o terceiro commit com squash
+- Renomeie o commit com um edit + ammend
+- Separe novamente os arquivos em dois commits

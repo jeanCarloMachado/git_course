@@ -59,6 +59,55 @@ git config --global commit.template /home/jean/.commit_template
 ```
 
 
+Template Pull requests
+----------------------
+
+
+```sh
+# Este PR é relacionado a qual issue?
+
+connected to #
+
+Lembre-se de checar as recomendações sobre reviews [aqui](https://github.com/compufour/compufacil/blob/master/Docs/src/Checklist.md).
+
+E as recomendações sobre escrita de testes [aqui](https://github.com/compufour/compufacil/blob/master/Docs/src/Tests.md).
+
+---
+
+## Este PR precisa de atenção especial em algum detalhe?
+
+Caso positivo descreva aqui
+
+## Checklist
+
+- [ ] Sub-tarefa 1
+- [ ] Sub-tarefa 2
+
+
+```
+
+[Example](https://gist.github.com/Lordnibbler/11002759)
+
+File: PULL_REQUEST_TEMPLATE.md
+
+
+Template issues
+---------------
+
+
+```sh
+# Descrição da tarefa
+
+O que precisa ser realizado/resolvido?
+
+## Checklist
+
+- [ ] Sub-tarefa 1
+- [ ] Sub-tarefa 2
+```
+
+File: ISSUE_TEMPLATE.md
+
 Checagem de espaços em branco antes de comitar
 ----------------------------------------------
 
@@ -66,6 +115,7 @@ Checagem de espaços em branco antes de comitar
 git diff --check
 
 ```
+
 
 ### Referências
 

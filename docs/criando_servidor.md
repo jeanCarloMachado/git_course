@@ -30,3 +30,13 @@ git init . --bare
 git clone root@45.55.247.185:/tmp/foo /tmp/foo_clone
 
 ```
+
+Hooks de server
+---------------
+
+```sh
+PRE-RECEIVE
+UPDATE
+POST-RECEIVE
+
+```

@@ -52,24 +52,6 @@ git checkout -- filename
 ```
 
 
-### Trocar a última mensagem de commit
-
-```
-git commit --amend
-
-```
-
-### Adicionando um arquivo ao commit anterior
-
-O *ammend* leva em consideração a área de *staging*.
-
-```sh
-git add file_x.md
-git rm file_y.md
-git commit --amend
-
-```
-
 ### Revert
 
 Desfaz um commit criando um novo commit. Recomendado em branches
@@ -92,6 +74,24 @@ git reset --soft HEAD~3
 
 ```
 git reset --hard HEAD~3
+
+```
+
+Stash
+-----
+
+Para salvar trabalhos temporários
+
+```sh
+git stash
+git stash apply
+
+```
+
+### Visualizar o stash
+
+```sh
+git stash show -p
 
 ```
 

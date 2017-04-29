@@ -65,6 +65,14 @@ git rev-parse issue_2..master
 ```
 
 
+Retorna o commit que algo está apontando.
+
+```
+git rev-parse master
+git rev-parse HEAD
+cat .git/HEAD
+```
+
 ### Que está em uma branch mas não está na outra (xor)
 
 ```
@@ -96,12 +104,5 @@ git log origin/master..master --stat
 
 ```
 git log origin/master..master --stat
-
-```
-
-### Who are the children of a commit
-
-```
- git rev-list --all --not 7ef306ff3ef3cfe694fbf3847f2c35c86067ee87^@ --children | grep "^7ef306ff3ef3cfe694fbf3847f2c35c86067ee87"
 
 ```

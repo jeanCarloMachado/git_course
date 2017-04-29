@@ -1,23 +1,20 @@
 Ferramentas & Produtividade
 ===========================
 
-Stash
------
+Reflog
+------
 
-Para salvar trabalhos temporários
-
-```sh
-git stash
-git stash apply
+Mostra um log dos comandos usados no repositório. Similar ao
+.bash_history (para operações locais)
 
 ```
+git reflog
 
-### Visualizar o stash
+ou
 
-```sh
-git stash show -p
-
+git log -g
 ```
+
 
 Gitk
 ----
@@ -193,4 +190,5 @@ tenta identificar de onde o código veio.
 $ git blame -C  GITPackUpload.m
 
 ```
+
 

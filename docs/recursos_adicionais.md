@@ -9,6 +9,7 @@ Links
  - [Novidades do gitlab](https://about.gitlab.com/2017/03/22/gitlab-9-0-released/)
  - [Markdown ref 1](https://guides.github.com/features/mastering-markdown/)
  - [Markdown ref 2](http://www.markdowntutorial.com)
+ - [Gerenciando segredos no repositório](https://github.com/sobolevn/git-secret)
 
 Livros
 ------
