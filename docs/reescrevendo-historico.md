@@ -133,7 +133,21 @@ Permite deletar um commit e seu conteúdo
 ### Edit
 
 Para o processo logo após o commit em questão, possibilitando usar
-o ammend para editá-lo.
+o amend para editá-lo.
+
+Também é possível utilizar o reset HEAD^ para desfazer ele
+completamente.
+
+
+Cherry-Pick
+-----------
+
+Permite aplicar um único commit de outra branch.
+
+```
+git cherry-pick commitId
+
+```
 
 Removendo arquivos do histórico
 -------------------------------
@@ -147,16 +161,6 @@ git filter-branch --tree-filter 'rm -rf passwords.txt' HEAD.
  git filter-branch --force --index-filter \
 'git rm --cached --ignore-unmatch PATH-TO-YOUR-FILE-WITH-SENSITIVE-DATA' \
 --prune-empty --tag-name-filter cat -- --all
-
-```
-
-Cherry-Pick
------------
-
-Permite aplicar um único commit de outra branch.
-
-```
-git cherry-pick
 
 ```
 

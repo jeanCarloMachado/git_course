@@ -143,3 +143,13 @@ git merge master -X ours
 git merge master -X ours
 
 ```
+
+
+Definindo estratégias por arquivos
+-----------------------------
+
+```sh
+cat .git/info/attributes
+database.xml merge=ours
+
+```

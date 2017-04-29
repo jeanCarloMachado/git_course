@@ -96,3 +96,5 @@ No repositório dado:
 - Junte o segundo e o terceiro commit com squash
 - Renomeie o commit com um edit + ammend
 - Separe novamente os arquivos em dois commits
+- reordene os commits colocando o segundo depois do terceiro
+- Delete o segundo commit
