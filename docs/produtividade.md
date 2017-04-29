@@ -1,82 +1,6 @@
 Ferramentas & Produtividade
 ===========================
 
-Reflog
-------
-
-Mostra um log dos comandos usados no repositório. Similar ao
-.bash_history (para operações locais)
-
-```
-git reflog
-
-ou
-
-git log -g
-```
-
-
-Gitk
-----
-
-Bom para verificar o histórico de um único arquivo rapidamente.
-
-
-Customizando
-------------
-
-As configurações globais ficam em
-
-```sh
-~/.gitconfig
-
-```
-
-Configurações para todos usuários podem ir em
-
-```sh
-/etc/gitconfig
-
-```
-
-Em repositórios
-
-```sh
-.git/config
-
-
-Para listar as configurações:
-
-```sh
-git config --list
-
-```
-```
-
-Cores
------
-
-```sh
-git config --global color.ui true
-
-```
-
-Setar o editor padrão
----------------------
-
-```
-git config --global core.editor vim
-
-```
-
-Pager
------
-
-```
-git config --global core.pager 'less'
-
-```
-
 Aliases
 -------
 
@@ -158,6 +82,75 @@ last_diff_file() {
 ```
 
 
+Gitk
+----
+
+Bom para verificar o histórico de um único arquivo rapidamente.
+
+
+Customizando
+------------
+
+As configurações globais ficam em
+
+```sh
+~/.gitconfig
+
+```
+
+Configurações para todos usuários podem ir em
+
+```sh
+/etc/gitconfig
+
+```
+
+Em repositórios
+
+```sh
+.git/config
+```
+
+
+Para listar as configurações:
+
+```sh
+git config --list
+
+```
+
+Cores
+-----
+
+```sh
+git config --global color.ui true
+
+```
+
+Setar o editor padrão
+---------------------
+
+```
+git config --global core.editor vim
+
+```
+
+Pager
+-----
+
+```
+git config --global core.pager 'less'
+
+```
+
+Padrão de visualização de merges
+--------------------------------
+
+```sh
+git config --global merge.conflictstyle diff3
+
+```
+
 ### Logs
 
 Customizar logs é uma arte.
@@ -173,22 +166,5 @@ git config --global alias.mylog "log --pretty=format:'%h %s [%an]' --graph"
 #### Opções
 
 --decorate  mostra as braches apontando para determinados commits
-
-Blame
------
-
-Mostra as últimas alterações de cada linha de arquivo com o autor.
-
-```
-$ git blame -L 141,153 simplegit.rb
-
-```
-Git não guarda renames explicitamente. Quando passado o -C git
-tenta identificar de onde o código veio.
-
-```
-$ git blame -C  GITPackUpload.m
-
-```
 
 

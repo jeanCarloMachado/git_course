@@ -106,3 +106,37 @@ git log origin/master..master --stat
 git log origin/master..master --stat
 
 ```
+
+
+
+Blame
+-----
+
+Mostra as últimas alterações de cada linha de arquivo com o autor.
+
+```
+$ git blame -L 141,153 simplegit.rb
+
+```
+Git não guarda renames explicitamente. Quando passado o -C git
+tenta identificar de onde o código veio.
+
+```
+$ git blame -C  GITPackUpload.m
+
+```
+Reflog
+------
+
+Mostra um log dos comandos usados no repositório. Similar ao
+.bash_history (para operações locais)
+
+```
+git reflog
+
+ou
+
+git log -g
+```
+
+

@@ -144,6 +144,13 @@ git merge master -X ours
 
 ```
 
+Para não tentar resolver os conflitos e apenas usar um lado
+-----------------------------------------------------------
+
+```sh
+-s ours | -s theirs
+
+```
 
 Definindo estratégias por arquivos
 -----------------------------

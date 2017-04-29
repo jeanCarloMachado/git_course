@@ -2,7 +2,7 @@ Exercícios
 ==========
 
 
-### Básico 
+### Básico
 <!--{{{-->
 <!--{{{-->
 - Crie um novo diretório para o projeto
@@ -90,6 +90,8 @@ Avançado
 --------
 
 ### Reescrevendo o histórico
+
+URL: goo.gl/hpwrl7
 
 No repositório dado:
 

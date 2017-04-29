@@ -15,7 +15,7 @@ pages:
     - Github e Gitlab: 'github_gitlab.md'
 - Avançado:
     - Operadores Relativos: 'operadores_relativos.md'
-    - Procurando no histórico: 'procurando.md'
+    - Procurando: 'procurando.md'
     - Desfazendo histórico: 'desfazendo.md'
     - Reescrevendo Histórico: 'reescrevendo-historico.md'
     - Boas Práticas: 'boas_praticas.md'
