@@ -1,5 +1,4 @@
-Remoto no filesystem local
---------------------------
+## Localhost
 
 ```
 cd /path/to/git-docs

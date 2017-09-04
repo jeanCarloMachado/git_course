@@ -1,5 +1,4 @@
-Procurando
------------
+## Procurando
 
 ### Quando string foi introduzida
 
@@ -22,8 +21,7 @@ git grep [-i] [-n] [--count] [--untracked ] linus
 ```
 
 
-Procurar por modifcações em bloco de texto
-------------------------------------------
+## Procurar por modifcações em bloco de texto
 
 ```sh
 git log -L '/deleteUserFromClient/',/\ \ \ \}/:\
@@ -31,15 +29,13 @@ Backend/module/Application/src/Application/Service/Client/Client.php
 ```
 
 
-Últimas N alterações em um arquivo
-----------------------------------
+## Últimas N alterações em um arquivo
 
 ```
 git log -p --follow -2 Backend/module/Api/src/Api/Service/ErrorProcessor.php
 ```
 
-Diferença entre branches
-------------------------
+## Diferença entre branches
 
 ### Todos os commits que estão na branch develop mas não estão na master
 
@@ -125,8 +121,7 @@ tenta identificar de onde o código veio.
 $ git blame -C  GITPackUpload.m
 
 ```
-Reflog
-------
+## Reflog
 
 Mostra um log dos comandos usados no repositório. Similar ao
 .bash_history (para operações locais)
@@ -137,6 +132,14 @@ git reflog
 ou
 
 git log -g
+```
+
+
+
+## Diff por tempo
+
+```sh
+git whatchanged --since="90 day ago" -p
 ```
 
 

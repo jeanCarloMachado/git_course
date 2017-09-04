@@ -1,5 +1,11 @@
-Desfazendo
-----------
+## Desfazendo
+
+
+### Últimos 3 commits
+
+```sh
+git undo 3
+```
 
 ### Recuperando na área de trabalho
 

@@ -1,5 +1,4 @@
-Status
-------
+## Status
 
 Git status dá informações de como está seu repositório. Muito útil
 ara saber qual a próxima coisa a se fazer.
@@ -10,8 +9,7 @@ git status -s
 
 ```
 
-Add
----
+## Add
 
 Git add adiciona arquivos a uma área temporária
 para compor um commit (staging).
@@ -20,8 +18,7 @@ para compor um commit (staging).
 git add $ARQUIVO|$DIRETORIO
 ```
 
-Commit
-------
+## Commit
 
 Cada mudança no histórico de um projeto é representado por um
 commit. `git show` mostra o  último commit.
@@ -41,8 +38,7 @@ git commit -a
 
 ```
 
-Consultando o histórico
------------------------
+## Consultando o histórico
 
 ### Git log
 
@@ -66,8 +62,7 @@ gitk nome_do_arquivo
 
 ```
 
-Removendo arquivos
-------------------
+## Removendo arquivos
 
 ```sh
 git rm --cached foo.txt//staging
@@ -75,8 +70,7 @@ git rm foo.txt
 
 ```
 
-Gitignore
-----------
+## Gitignore
 
 ```sh
 site/*
@@ -91,8 +85,7 @@ Backend/data/tmp*
 Backend/config/autoload/*local.php
 
 ```
-Renomeando arquivos
--------------------
+## Renomeando arquivos
 
 ```sh
 git mv REDME.md README
@@ -107,3 +100,11 @@ git rm README.md
 git add README
 
 ```
+
+
+## Removendo arquivos de staging
+
+```sh
+git reset my_file
+```
+

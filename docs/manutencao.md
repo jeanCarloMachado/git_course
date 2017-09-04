@@ -1,5 +1,4 @@
-Tags
-----
+## Tags
 
 
 Tags anotadas guardam o commit, quem comitou e uma descrição
@@ -84,8 +83,7 @@ git reflog expire --expire-unreachable=now --all
 git gc --prune=now
 ```
 
-Removendo branches já trabalhadas
----------------------------------
+## Removendo branches já trabalhadas
 
 ```
 git branch --merged | egrep -v "(^\*|master|dev)" | xargs git branch -d
@@ -96,12 +94,11 @@ Git só deleta objetos quando você faz um `git gc`.
 
 
 
-Bisect
-------
+## Bisect
 
 Ferramenta para descobrir qual commit quebrou uma feature.
 
-```
+```sh
 git bisect start
 git bisect bad commitid
 git bisect good commitid
@@ -112,9 +109,13 @@ git bisect reset
 
 Automate bisect:
 
-```
+```sh
 $ git bisect start HEAD v1.0
 $ git bisect run test-error.sh
-
 ```
 
+## Quebrar uma pasta em um repositório
+
+```sh
+git filter-branch --prune-empty --subdirectory-filter <folderName> master
+```
