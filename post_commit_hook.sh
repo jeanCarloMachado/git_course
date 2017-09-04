@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
-echo $PWD
+echo $(pwd)
 make deploy_server
