@@ -10,6 +10,8 @@ serve:
 	sleep 10 && ${BROWSER} http://localhost:8081 &
 deploy_server: build
 	rsync -a site/ root@$(BLOG_IP):/var/www/html/git/
+	${BROWSER} http://jeancarlomachado.com.br/git &
+
 deploy_githubio: build
 	cp -rf site/* githubio/
 	cd githubio ; git add . ; git commit -m "improvements"

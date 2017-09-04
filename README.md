@@ -1,32 +1,22 @@
-Git docs
-========
+# Git docs
 
-Uma simples revisão do conteúdo da aula.
-
-
-É interessante que durante as aulas os alunos repitam os comandos
-para a melhor retenção.
-
-
-Build
------
+## Build
 
 O material pode ser gerado em pdf com o comando
 
-```
+```sh
 make pdf
 
 ```
 
-Para gerar um docx 
+Para gerar um docx
 
-```
+```sh
 make doc
 
 ```
 
-TODO
-----
+## TODO
 
 
  - Susbstituir as representações visuas pelas geradas pelo
@@ -34,4 +24,4 @@ TODO
  - Adicionar exemplo de merge da master em uma branch
  - É possível mostrar um gráfico no git log completo
 
-A copy can be found on https://jeancarlomachado.github.io/.
+A copy can be found on http://jeancarlomachado.com.br/git.
