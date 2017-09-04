@@ -1,6 +1,5 @@
 
-Links
------
+## Links
 
  - [Referência oficial](https://git-scm.com/docs)
  - [Melhor tutorial de Git](http://rypress.com/tutorials/git/index)
@@ -10,9 +9,9 @@ Links
  - [Markdown ref 1](https://guides.github.com/features/mastering-markdown/)
  - [Markdown ref 2](http://www.markdowntutorial.com)
  - [Gerenciando segredos no repositório](https://github.com/sobolevn/git-secret)
+ - [Palestra sobre Git Linus Torvalds](https://www.youtube.com/watch?v=4XpnKHJAok8&t=3s)
 
-Livros
-------
+## Livros
  - [Git Pro](https://git-scm.com/book/en/v2)
  - [Pragmatic Version Control Using Git - Pragmatic
      bookshelf](https://pragprog.com/book/tsgit/pragmatic-version-control-using-git)

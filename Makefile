@@ -1,6 +1,10 @@
 all: serve
 .PHONY: presentation
 
+init:
+	cp post_commit_hook.sh .git/hooks/post-commit
+	chmod a+x .git/hooks/post-commit
+
 build:
 	mkdocs build
 	cp -rf docs/*.svg site/
