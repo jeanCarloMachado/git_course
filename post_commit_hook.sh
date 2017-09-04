@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-(cd  ../../ && make deploy_server)
+make deploy_server
